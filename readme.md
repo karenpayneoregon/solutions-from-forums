@@ -30,6 +30,14 @@ In most cases popular packages will be used along with packages created by Karen
 GreetingsConsoleApp, a console project walks a novice developer through creating a colorful console app with a method to accept a person's name using a [NuGet package](https://www.nuget.org/packages/Spectre.Console/0.45.1-preview.0.28) [Spectre.Console](https://spectreconsole.net/). Instructions are in [HowToCreate.md](GreetingsConsoleApp/HowToCreate.md).
 
 
+# NotesRazorApp and NotesFormApp
+
+NotesRazorApp is a Razor Page project which provides tips on styling with Bootstrap 5 and working with EF Core 6. NotesFormApp project is for setting up a database for NotesRazorApp project.
+
+See the following [readme](/NotesRazorApp/Article/readme.md) file.
+
+
+
 
 
 
