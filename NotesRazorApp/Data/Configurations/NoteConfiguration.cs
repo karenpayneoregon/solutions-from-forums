@@ -13,7 +13,7 @@ public partial class NoteConfiguration : IEntityTypeConfiguration<Note>
 
         // KP AutoInclude should be used with care
         // https://learn.microsoft.com/en-us/ef/core/querying/related-data/eager
-        entity.Navigation(n => n.Category).AutoInclude();
+        //entity.Navigation(n => n.Category).AutoInclude();
 
         entity.HasIndex(e => e.CategoryId, "IX_Note_CategoryId");
 

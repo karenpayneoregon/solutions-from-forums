@@ -12,7 +12,8 @@ namespace NotesRazorApp
 
             builder.Services.AddRazorPages();
             builder.Services.AddDbContextPool<Context>(options =>
-                options.UseSqlServer(ConfigurationHelper.ConnectionString()));
+                options.UseSqlServer(ConfigurationHelper.ConnectionString())
+                    .EnableSensitiveDataLogging());
 
             var app = builder.Build();
 
