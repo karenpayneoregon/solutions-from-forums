@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 using System.Text.RegularExpressions;
+using KP_ConsoleAppNet61.Classes;
 
 namespace KP_ConsoleAppNet61;
 
@@ -7,7 +8,17 @@ internal partial class Program
 {
     static void Main(string[] args)
     {
-        var folder = @"c:\Users\paynek\Documents\Snagit";
+        /*
+         * IMPORTANT: Change to a folder with many files with many files in sub-folders
+         */
+        var folder = @"c:\Users\****\Documents\Snagit";
+
+        if (!Directory.Exists(folder))
+        {
+            AnsiConsole.MarkupLine($"[white on red]{folder} does not exists[/]");
+            Console.ReadLine();
+            return;
+        }
 
         var directory = new DirectoryInfo(folder);
         Console.WriteLine($"File count {FileCount(directory)} in {folder}");
@@ -34,23 +45,4 @@ internal partial class Program
         var result = BitConverter.ToInt32(bytes);
         AnsiConsole.MarkupLine(result < 0 ? $"[yellow]{result.Invert()}[/]" : $"[cyan]{result}[/]");
     }
-}
-
-public static class IntegerExtensions
-{
-    /// <summary>
-    /// Flip negative to positive or positive to negative
-    /// </summary>
-    /// <param name="source"></param>
-    /// <returns></returns>
-    public static int Invert(this int source) =>
-        source * (-1);
-
-    /// <summary>
-    /// Flip negative to positive or positive to negative alternative via bitwise operation
-    /// </summary>
-    /// <param name="source"></param>
-    /// <returns></returns>
-    public static int InvertBitwise(this int source) =>
-        ~source + 1;
 }

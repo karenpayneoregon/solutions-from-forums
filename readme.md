@@ -2,6 +2,10 @@
 
 This repository is dedicated to a developer just starting out with Visual Studio on how to write decent code. Many samples come from Karen's twenty plus years helping developers asking questions in online developer forums and by in some cases not responding but make note of these cases.
 
+## .NET Core
+
+Currently there are console projects using both .NET Core 6 and .NET Core 7 and the .NET Core 7 projects are using NuGet packages for .NET Core 6.
+
 ## Project types
 
 Console and Windows Forms will be dominate project types as they are best to learn from. Why use Windows Forms when there are other project types like MAUI and WPF? Windows Forms when used are glorified console projects in that when performing work a developer can easily see their work and get a better understanding of events, delegates and asynchronous programming.
