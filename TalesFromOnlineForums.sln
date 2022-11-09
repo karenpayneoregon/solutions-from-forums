@@ -26,7 +26,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console projects core 7", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleWorkingWithCsharp11", "ConsoleWorkingWithCsharp11\ConsoleWorkingWithCsharp11.csproj", "{CDBCC604-2356-4E88-B33C-6A2B3789CCF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewInEFCore7", "NewInEFCore7\NewInEFCore7.csproj", "{6D3F4137-81BD-4552-8666-9F711A71A183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewInEFCore7", "NewInEFCore7\NewInEFCore7.csproj", "{6D3F4137-81BD-4552-8666-9F711A71A183}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class projects", "Class projects", "{EDBFA07E-C980-4B74-A006-8A695FE574C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
