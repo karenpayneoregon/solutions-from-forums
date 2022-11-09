@@ -7,6 +7,12 @@ namespace ConsoleWorkingWithCsharp11.Models;
 /// </summary>
 public class Person
 {
+    public Person() { }
+
+    [SetsRequiredMembers]
+    public Person(string firstName, string lastName, string email) 
+        => (FirstName, LastName, Email) = (firstName, lastName, email);
+
     public required string FirstName { get; init; }
     public string MiddleName { get; set; }
     public required string LastName { get; init; }
