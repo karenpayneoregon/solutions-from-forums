@@ -1,4 +1,6 @@
-﻿using ConsoleWorkingWithCsharp11.Models;
+﻿using ConsoleWorkingWithCsharp11.Classes;
+using System.ComponentModel.DataAnnotations;
+
 using static ConsoleWorkingWithCsharp11.Classes.Helpers;
 
 // ReSharper disable once CheckNamespace
@@ -8,7 +10,10 @@ internal partial class Program
 {
     private static void NewLineInterpolations()
     {
-        Console.WriteLine($"Greeting is {Greeting.For.TimeOfDay()}");
+        Console.WriteLine($"Greeting is {
+            Greeting
+                .For
+                .TimeOfDay()}");
     }
 
     private static void GenericMath()
@@ -21,6 +26,15 @@ internal partial class Program
 
         AnsiConsole.MarkupLine($"Helpers.Sum(integers) [white on blue]{Sum(integers)}[/]");
         AnsiConsole.MarkupLine($"Helpers.Sum(doubles) [white on blue]{Sum(doubles):F}[/]");
+
+        Console.WriteLine();
+
+        var integerResult = Helpers.AddAll1(integers);
+        var doubleResult = Helpers.AddAll1(doubles);
+
+        AnsiConsole.MarkupLine($"[yellow]integerResult[/] {integerResult}");
+        AnsiConsole.MarkupLine($" [yellow]doubleResult[/] {doubleResult}");
+
     }
     private static void RequiredModifier()
     {
@@ -28,14 +42,17 @@ internal partial class Program
          * uses required modifier
          * to enforce constructors and callers to initialize those values
          */
-        Person person = new() { FirstName = "", LastName = "" };
+        Person person = new() { FirstName = "", LastName = "", Email = ""};
     }
 
+    /// <summary>
+    /// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#list-patterns
+    /// </summary>
     private static void ListAndSlicePattern()
     {
         int[] list1 = { 1, 2, 3, 4, 5 };
 
-        if (list1 is [1, 2, 3, 4, 5] && list1 is [_, _, _, _,  5])
+        if (list1 is [1, 2, 3, 4, 5] && list1 is [ _ , _ , _ , _ ,  5 ])
         {
             AnsiConsole.MarkupLine("[white on blue]List Pattern Matched[/]");
         }
@@ -67,18 +84,62 @@ internal partial class Program
 
     }
 
-    public static Table CreateTable() =>
-        new Table()
-            .RoundedBorder()
-            .AddColumn("[cyan]Id[/]")
-            .AddColumn("[cyan]Company[/]")
-            .AddColumn("[cyan]First[/]")
-            .AddColumn("[cyan]Last[/]")
-            .AddColumn("[cyan]Gender[/]")
-            .AddColumn("[cyan]Contact type[/]")
-            .Alignment(Justify.Center)
-            .BorderColor(Color.LightSlateGrey)
-            .Title("[LightGreen]Customers[/]");
+    /// <summary>
+    /// Nothing special other than the connection string using Encrypt=False
+    /// </summary>
+    private static async Task EntityFrameworkGetCustomers()
+    {
+        var customers = await DataOperations.ReadCustomersAsync();
+        var table = CreateTableEntityFramework();
+
+        foreach (var customer in customers)
+        {
+            table.AddRow(
+                customer.Identifier.ToString(),
+                customer.CompanyName,
+                customer.ContactFirstName,
+                customer.ContactLastName,
+                customer.GenderNavigation.GenderType,
+                customer.ContactTypeNavigation.ContactType);
+        }
+
+        AnsiConsole.Write(table);
+    }
+
+    private static void RawStringLiterals()
+    {
+        string text = "[red]I've been injected[/] ";
+        string longMessage = $$"""
+            This is a long message.
+            It has several lines.
+                Some are indented
+                        more than others. {{text}}
+            Some should start at the first column.
+            Some have "quoted text" in them.
+            """;
+
+        AnsiConsole.MarkupLine("[white on blue]Raw string literals[/]");
+        Console.WriteLine();
+        AnsiConsole.MarkupLine(longMessage);
+
+    }
+
+    private string FullName([Required] Person person) 
+        => $"{person.FirstName} {person.LastName}";
+
+
+    #region Screen helpers
+    public static Table CreateTableEntityFramework() => new Table()
+        .RoundedBorder()
+        .AddColumn("[cyan]Id[/]")
+        .AddColumn("[cyan]Company[/]")
+        .AddColumn("[cyan]First[/]")
+        .AddColumn("[cyan]Last[/]")
+        .AddColumn("[cyan]Gender[/]")
+        .AddColumn("[cyan]Contact type[/]")
+        .Alignment(Justify.Center)
+        .BorderColor(Color.LightSlateGrey)
+        .Title("[LightGreen]Customers[/]");
 
     private static void Render(Rule rule)
     {
@@ -89,7 +150,10 @@ internal partial class Program
     private static void ExitPrompt()
     {
         Console.WriteLine();
-        Render(new Rule($"[yellow]Press a key to exit the demo[/]").RuleStyle(Style.Parse("silver")).Centered());
+        Render(new Rule($"[yellow]Press a key to exit the demo[/]")
+            .RuleStyle(Style.Parse("silver"))
+            .Centered());
         Console.ReadLine();
-    }
+    } 
+    #endregion
 }

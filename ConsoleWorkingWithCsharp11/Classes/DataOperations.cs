@@ -1,25 +1,24 @@
-﻿using ConsoleWorkingWithCsharp11.Data;
-using ConsoleWorkingWithCsharp11.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using static ConsoleWorkingWithCsharp11.Classes.GenericSorterExtension;
 
 namespace ConsoleWorkingWithCsharp11.Classes;
 
 internal class DataOperations
 {
-    public static async Task<List<Customer>> CustomersWithIncludesAsync()
+    public static async Task<List<Customer>> ReadCustomersAsync()
     {
         await using var context = new Context();
         return await context.Customer
-            .Include(x => x.ContactTypeIdentifierNavigation)
-            .Include(x => x.GenderIdentifierNavigation)
+            .Include(x => x.ContactTypeNavigation)
+            .Include(x => x.GenderNavigation)
             .ToListAsync();
     }
 
-    public static List<Customer> SortByString()
+    public static async Task<List<Customer>> ReadCustomersGenericString()
     {
-        using var context = new Context();
-        return
-            context.Customer.SortColumn(nameof(Customer.CompanyName),
-                GenericSorterExtension.SortDirection.Descending).ToList();
+        await using var context = new Context();
+        return await context.Customer.SortColumn(nameof(Customer.CompanyName),
+                SortDirection.Descending)
+            .ToListAsync();
     }
 }

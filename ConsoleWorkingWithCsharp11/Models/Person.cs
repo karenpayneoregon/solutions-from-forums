@@ -1,4 +1,6 @@
-﻿namespace ConsoleWorkingWithCsharp11.Models;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace ConsoleWorkingWithCsharp11.Models;
 
 /// <summary>
 /// required modifier
@@ -8,5 +10,11 @@ public class Person
     public required string FirstName { get; init; }
     public string MiddleName { get; set; }
     public required string LastName { get; init; }
-    public string Email { get; init; }
+    public required string Email { get; init; }
+
+    [return: NotNullIfNotNull(nameof(url))]
+    public string HomeUrl(string url)
+    {
+        return url;
+    }
 }

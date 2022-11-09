@@ -1,5 +1,4 @@
-﻿using ConsoleWorkingWithCsharp11.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ConsoleWorkingWithCsharp11.Data.Configurations
@@ -14,11 +13,11 @@ namespace ConsoleWorkingWithCsharp11.Data.Configurations
             entity.Property(e => e.ContactFirstName).HasMaxLength(255);
             entity.Property(e => e.ContactLastName).HasMaxLength(255);
 
-            entity.HasOne(d => d.ContactTypeIdentifierNavigation).WithMany(p => p.Customer)
+            entity.HasOne(d => d.ContactTypeNavigation).WithMany(p => p.Customer)
             .HasForeignKey(d => d.ContactTypeIdentifier)
             .HasConstraintName("FK_Customer_ContactTypes");
 
-            entity.HasOne(d => d.GenderIdentifierNavigation).WithMany(p => p.Customer)
+            entity.HasOne(d => d.GenderNavigation).WithMany(p => p.Customer)
             .HasForeignKey(d => d.GenderIdentifier)
             .HasConstraintName("FK_Customer_Genders");
 

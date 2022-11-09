@@ -1,5 +1,4 @@
-﻿using ConsoleWorkingWithCsharp11.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ConsoleWorkingWithCsharp11.Data.Configurations

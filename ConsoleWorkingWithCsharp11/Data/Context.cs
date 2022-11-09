@@ -1,5 +1,4 @@
 ﻿using ConfigurationLibrary.Classes;
-using ConsoleWorkingWithCsharp11.Models;
 using Microsoft.EntityFrameworkCore;
 
 #nullable disable
@@ -26,7 +25,6 @@ public partial class Context : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer(ConfigurationHelper.ConnectionString());
-        //=> optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog=CustomerDatabase1;Integrated Security=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

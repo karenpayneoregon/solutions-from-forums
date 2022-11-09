@@ -10,8 +10,8 @@ public partial class Customer
     public string ContactLastName { get; set; }
     public int? ContactTypeIdentifier { get; set; }
     public int? GenderIdentifier { get; set; }
-    public virtual ContactTypes ContactTypeIdentifierNavigation { get; set; }
-    public virtual Genders GenderIdentifierNavigation { get; set; }
+    public virtual ContactTypes ContactTypeNavigation { get; set; }
+    public virtual Genders GenderNavigation { get; set; }
     public override string ToString() => CompanyName;
 
 }
