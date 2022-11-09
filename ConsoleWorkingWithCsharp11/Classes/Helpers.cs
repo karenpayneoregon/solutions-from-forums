@@ -1,4 +1,6 @@
-﻿using System.Numerics;
+﻿#nullable enable
+
+using System.Numerics;
 using System.Runtime.CompilerServices;
 
 namespace ConsoleWorkingWithCsharp11.Classes;
@@ -25,6 +27,12 @@ public class Helpers
     }
 
     public static T Add<T>(T left, T right) where T : INumber<T> => left + right;
+    
+    public static T AddAll<T>(Span<T> values) where T : INumber<T> => values switch
+    {
+        [] => T.Zero,
+        [var first, .. var rest] => first + AddAll<T>(rest)
+    };
 
     public static T AddAll1<T>(params T[] elements) where T : INumber<T> =>
         elements switch

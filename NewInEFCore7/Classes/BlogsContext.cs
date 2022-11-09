@@ -1,7 +1,10 @@
-﻿using System.Net;
+﻿
+using System.Net;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microsoft.Extensions.Logging;
+
+#nullable enable
 
 namespace NewInEFCore7.Classes;
 
