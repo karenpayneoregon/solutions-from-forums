@@ -8,13 +8,9 @@ internal partial class Program
     static async Task Main(string[] args)
     {
         await Task.Delay(0);
-        await GroupByEntityTypeSample.GroupBy_entity_type_SqlServer();
+        //await GroupByEntityTypeSample.GroupBy_entity_type_SqlServer();
 
         ExitPrompt();
     }
-
-
-
-
 }
 
