@@ -10,6 +10,7 @@ internal partial class Program
 {
     private static void NewLineInterpolations()
     {
+        Helpers.PrintSampleName();
         Console.WriteLine($"Greeting is {
             Greeting
                 .For
@@ -18,6 +19,8 @@ internal partial class Program
 
     private static void GenericMath()
     {
+        Helpers.PrintSampleName();
+
         var integers = new[] { 1, 2, 3, 4, 5 };
         var doubles = new[] { 0.1, 0.7, 1.1, 8.3 };
 
@@ -38,6 +41,8 @@ internal partial class Program
     }
     private static void RequiredModifier()
     {
+        Helpers.PrintSampleName();
+
         /*
          * uses required modifier
          * to enforce constructors and callers to initialize those values
@@ -50,6 +55,8 @@ internal partial class Program
     /// </summary>
     private static void ListAndSlicePattern()
     {
+        Helpers.PrintSampleName();
+
         int[] list1 = { 1, 2, 3, 4, 5 };
 
         if (list1 is [1, 2, 3, 4, 5] && list1 is [ _ , _ , _ , _ ,  5 ])
@@ -89,6 +96,8 @@ internal partial class Program
     /// </summary>
     private static async Task EntityFrameworkGetCustomers()
     {
+        Helpers.PrintSampleName();
+
         var customers = await DataOperations.ReadCustomersAsync();
         var table = CreateTableEntityFramework();
 
@@ -108,6 +117,8 @@ internal partial class Program
 
     private static void RawStringLiterals()
     {
+        Helpers.PrintSampleName();
+
         string text = "[red]I've been injected[/] ";
         string longMessage = $$"""
             This is a long message.

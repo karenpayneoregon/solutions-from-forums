@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Runtime.CompilerServices;
 
 namespace ConsoleWorkingWithCsharp11.Classes;
 
@@ -37,5 +38,11 @@ public class Helpers
         T result = T.Zero;
         foreach (T item in sender) { result += item; }
         return result;
+    }
+
+    public static void PrintSampleName([CallerMemberName] string? methodName = null)
+    {
+        AnsiConsole.MarkupLine($"[cyan]>>>> Sample:[/] [white]{methodName}[/]");
+        Console.WriteLine();
     }
 }

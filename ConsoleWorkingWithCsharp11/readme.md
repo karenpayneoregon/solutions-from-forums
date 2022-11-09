@@ -1,11 +1,15 @@
 ﻿# About
 
+
 Feeling out C# 11/.NET Core 7 and EF Core 7 and with that all works but may be a tad chaotic but all code works. All code except EF Core is in `Classes\Program`
 
 
 # EF Core 7
 
 Note on EF Core 7 `Encrypt defaults to true for SQL Server connections` so for prior versions of EF Core the following works but will fail with EF Core
+
+
+:trident: Added some samples from Microsoft
 
 ```
 Data Source=.\\SQLEXPRESS;Initial Catalog=CustomerDatabase1;Integrated Security=True;
@@ -33,6 +37,8 @@ appsettings.json
   }
 }
 ```
+
+
 
 
 # Console
