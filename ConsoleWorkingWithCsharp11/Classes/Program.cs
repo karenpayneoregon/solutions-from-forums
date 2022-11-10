@@ -1,6 +1,6 @@
 ﻿using ConsoleWorkingWithCsharp11.Classes;
 using System.ComponentModel.DataAnnotations;
-
+using System.Globalization;
 using static ConsoleWorkingWithCsharp11.Classes.Helpers;
 
 // ReSharper disable once CheckNamespace
@@ -138,6 +138,19 @@ internal partial class Program
     private string FullName([Required] Person person) 
         => $"{person.FirstName} {person.LastName}";
 
+    public static void GetSeason(int month)
+    {
+        string season = "The season is " + $"{month switch
+        {
+            1 or 2 or 12 => "Winter",
+            > 2 and < 6 => "Spring",
+            > 5 and < 9 => "Summer",
+            > 8 and < 12 => "Autumn",
+            _ => "unknown. Wrong month number",
+        }}.";
+
+        AnsiConsole.MarkupLine($"Season for [cyan]{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(month)}[/] is [cyan]{season}[/]");
+    }
 
     #region Screen helpers
     public static Table CreateTableEntityFramework() => new Table()

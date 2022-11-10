@@ -10,6 +10,7 @@ internal partial class Program
         await Task.Delay(0);
         //await GroupByEntityTypeSample.GroupBy_entity_type_SqlServer();
 
+        GetSeason(11);
         ExitPrompt();
     }
 }
