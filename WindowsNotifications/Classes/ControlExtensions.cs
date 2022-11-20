@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace Notifications.Classes;
+﻿namespace Notifications.Classes;
 
 internal static class ControlExtensions
 {

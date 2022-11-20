@@ -1,6 +1,4 @@
-using System.ComponentModel;
 using Microsoft.Toolkit.Uwp.Notifications;
-using Notifications.Classes;
 
 namespace Notifications;
 
