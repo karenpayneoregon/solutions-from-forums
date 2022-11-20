@@ -32,7 +32,7 @@ private void OnShown(object sender, EventArgs e)
 
 Notification presented.
 
-![Notification](assets/notification.png)
+![Notification1](assets/notification1.png)
 
 Dialog from `OnShown` above
 

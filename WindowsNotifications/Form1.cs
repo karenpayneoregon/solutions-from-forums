@@ -43,7 +43,7 @@ public partial class Form1 : Form
 
     private void ExecuteButton_Click(object sender, EventArgs e)
     {
-        var imageUri = Path.GetFullPath(@"Me1a.png");
+        var imageUri = Path.GetFullPath(@"Karen.png");
         new ToastContentBuilder()
             .AddArgument("action", "viewConversation")
             .AddArgument("conversationId", 9814)

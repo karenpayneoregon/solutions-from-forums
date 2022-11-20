@@ -38,8 +38,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="Me1a.png">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		<None Update="Karen.png">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
 
