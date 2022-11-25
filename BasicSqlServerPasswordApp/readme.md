@@ -1,4 +1,4 @@
-﻿![Password Encryption](assets/password-encryption.png)
+﻿# Storing passwords in SQL-Server database
 
 # Introduction
 
