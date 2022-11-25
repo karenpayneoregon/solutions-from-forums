@@ -1,5 +1,7 @@
 ﻿# Storing passwords in SQL-Server database
 
+**Important**: Make sure to following instructions under the Script folder readme file.
+
 # Introduction
 
 Developers just starting working with Windows Forms, WPF or Console applications tend to use plain text to store passwords in a database which is not wise as anyone that can open the database can see these passwords stored in plain text.
@@ -116,3 +118,4 @@ Use the following to see the code work then provide invalid information.
 # Ending notes
 
 I kept the code sample simple so they can be used `as is` or modified to suit indivdual requirements.
+
