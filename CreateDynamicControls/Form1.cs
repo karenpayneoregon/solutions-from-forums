@@ -50,15 +50,5 @@ namespace CreateDynamicControls
             ProductsListBox.DataSource = _productBindingSource;
 
         }
-        /// <summary>
-        /// Requires SQL-Server and to run the script under DataScripts folder
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CreateCategoriesButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
