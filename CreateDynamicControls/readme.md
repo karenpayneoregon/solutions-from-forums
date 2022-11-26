@@ -10,6 +10,8 @@ This code sample will show how to read a list of categories for products out of 
 
 :beginner: All code is <kbd>.NET Framework 4.8</kbd> to reach a wider audience than just <kbd>.NET Core</kbd>
 
+:beginner: Before running the project, run the script in the DataScripts folder.
+
 To store information classes are used rather than the go-to DataTable which is overkill.
 
 For categories
