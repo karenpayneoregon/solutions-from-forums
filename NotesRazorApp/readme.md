@@ -52,8 +52,20 @@ This is how to format the `DueDate` and any `DateTime` property use [DisplayForm
 public DateTime? DueDate { get; set; }
 ```
 
+# Conditional footer
+
+Many web applications have a footer which has a link to the main page. If there is a menu with a link to the main page, consider using a conditional footer which is defined to display the home page link on all pages other than the main page.
+
+In `_Layoyt.cshtml`
+
+![Footer1](Article/Assets/Footer1.png)
+
+</br>
+
+When in `Index.cshtml` define the section `indexFooter`.
 
 
+![Footer2](Article/Assets/Footer2.png)
 
 
 
