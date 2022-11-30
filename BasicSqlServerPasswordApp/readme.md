@@ -95,6 +95,26 @@ public static bool ValidateUser1(string username, SecureString password)
 }
 ```
 
+# Example 3
+
+Where example 2 used two statements, this version uses one statement. This is the `best` of the three to use.
+
+```csharp
+public static bool ValidateUser2(string username, SecureString password)
+{
+    using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
+    using var cmd = new SqlCommand() { Connection = cn };
+
+    cmd.CommandText = "SELECT Id from dbo.Users WHERE Username = @UserName  AND [dbo].[Password_Check](@Password) = 'Valid'";
+    cmd.Parameters.Add("@UserName", SqlDbType.NChar).Value = username;
+    cmd.Parameters.Add("@Password", SqlDbType.NChar).Value = password.ToUnSecureString();
+    cn.Open();
+        
+    return Convert.ToString(cmd.ExecuteScalar()) == "1";
+
+}
+```
+
 ## Next steps
 
 - Placing desired option into a class project.

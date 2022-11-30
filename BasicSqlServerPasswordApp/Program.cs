@@ -14,7 +14,7 @@ internal partial class Program
         
         Console.Clear();
 
-        if (Sample1(name,password))
+        if (Sample3(name,password))
         {
             SpectreOperations.DrawWelcomeHeader();
         }
@@ -30,5 +30,6 @@ internal partial class Program
 
     private static bool Sample1(string userName, string password) => DataOperations.ValidateUser(userName, password!.ToSecureString()!);
     private static bool Sample2(string userName, string password) => DataOperations.ValidateUser1(userName, password!.ToSecureString()!);
+    private static bool Sample3(string userName, string password) => DataOperations.ValidateUser2(userName, password!.ToSecureString()!);
 
 }
