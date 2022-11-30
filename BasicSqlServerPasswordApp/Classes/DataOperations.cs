@@ -6,7 +6,9 @@ using Microsoft.Data.SqlClient;
 namespace BasicSqlServerPasswordApp.Classes;
 
 /// <summary>
-/// Make sure to following instructions in readme under the scripts folder before running the code.
+/// * Make sure to following instructions in readme under the scripts folder before running the code.
+/// * Recommend <see cref="ValidateUser3"/> others are there to see how we got there and that HASHBYTES is better than PWDCOMPARE
+///   but that is up to the developer.
 /// </summary>
 public class DataOperations
 {
@@ -57,7 +59,12 @@ public class DataOperations
         return Convert.ToString(cmd.ExecuteScalar()) == "Valid";
 
     }
-
+    /// <summary>
+    /// Validate user name and password
+    /// </summary>
+    /// <param name="username">user name to validate</param>
+    /// <param name="password">user password to validate</param>
+    /// <returns>success or failure</returns>
     public static bool ValidateUser2(string username, SecureString password)
     {
         using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
@@ -69,7 +76,27 @@ public class DataOperations
         cn.Open();
         
         return Convert.ToString(cmd.ExecuteScalar()) == "1";
-        
 
+    }
+
+    /// <summary>
+    /// Validate user name and password, if user input matches return their primary key
+    /// </summary>
+    /// <param name="username">user name to validate</param>
+    /// <param name="password">user password to validate</param>
+    /// <returns>success and identity</returns>
+    public static (bool success, int id) ValidateUser3(string username, SecureString password)
+    {
+        using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
+        using var cmd = new SqlCommand() { Connection = cn };
+
+        cmd.CommandText = "SELECT Id from dbo.Users WHERE Username = @UserName  AND [dbo].[Password_Check](@Password) = 'Valid'";
+        cmd.Parameters.Add("@UserName", SqlDbType.NChar).Value = username;
+        cmd.Parameters.Add("@Password", SqlDbType.NChar).Value = password.ToUnSecureString();
+        cn.Open();
+
+        var identifier = Convert.ToInt32(Convert.ToString(cmd.ExecuteScalar()) == "1");
+        return identifier > 0 ? (true, identifier) : (false, 0);
+        
     }
 }
