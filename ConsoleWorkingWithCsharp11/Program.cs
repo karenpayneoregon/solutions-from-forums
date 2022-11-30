@@ -1,7 +1,4 @@
-﻿using ConsoleWorkingWithCsharp11.Classes;
-using System.ComponentModel.DataAnnotations;
-
-namespace ConsoleWorkingWithCsharp11;
+﻿namespace ConsoleWorkingWithCsharp11;
 
 internal partial class Program
 {

@@ -36,6 +36,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlServerLibrary", "SqlServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateDynamicControls", "CreateDynamicControls\CreateDynamicControls.csproj", "{B09FA7C0-E3C2-4DDD-A7CC-8D7046A1041A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerDateTime2PrecisionApp", "SqlServerDateTime2PrecisionApp\SqlServerDateTime2PrecisionApp.csproj", "{4AF0AF43-FE35-44E6-818B-DF43108BD005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,10 @@ Global
 		{B09FA7C0-E3C2-4DDD-A7CC-8D7046A1041A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B09FA7C0-E3C2-4DDD-A7CC-8D7046A1041A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09FA7C0-E3C2-4DDD-A7CC-8D7046A1041A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF0AF43-FE35-44E6-818B-DF43108BD005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF0AF43-FE35-44E6-818B-DF43108BD005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF0AF43-FE35-44E6-818B-DF43108BD005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF0AF43-FE35-44E6-818B-DF43108BD005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{BB7FEF82-7573-410E-839A-0A0FD34CC277} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
 		{37D9D195-8701-4379-9881-ED3AABFF35C7} = {EDBFA07E-C980-4B74-A006-8A695FE574C8}
 		{B09FA7C0-E3C2-4DDD-A7CC-8D7046A1041A} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
+		{4AF0AF43-FE35-44E6-818B-DF43108BD005} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7591A428-3162-447A-841E-2476901C3B3A}

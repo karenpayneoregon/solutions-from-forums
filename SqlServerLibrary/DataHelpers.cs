@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
+using SqlServerLibrary.Models;
 
 namespace SqlServerLibrary;
 
@@ -36,5 +37,30 @@ public class DataHelpers
         cn.Open();
         return cmd.ExecuteScalar() != DBNull.Value;
 
+    }
+
+    public static (List<DateTimeInformation> list, bool hasColumns) GetDateTimeInformation(string connectionString, string tableName)
+    {
+        List<DateTimeInformation> dateTimeInfoList = new();
+        using var cn = new SqlConnection(connectionString);
+        using var cmd = new SqlCommand("SELECT TABLE_NAME,COLUMN_NAME,DATETIME_PRECISION FROM INFORMATION_SCHEMA.COLUMNS WHERE DATA_TYPE = 'datetime2' AND TABLE_NAME = @TableName;", cn);
+        cmd.Parameters.Add("@TableName", SqlDbType.NChar).Value = tableName;
+
+        cn.Open();
+
+        var reader = cmd.ExecuteReader();
+        if (reader.HasRows)
+        {
+            while (reader.Read())
+            {
+                dateTimeInfoList.Add(new DateTimeInformation() {TableName = reader.GetString(0), ColumnName = reader.GetString(1), Precision = reader.GetInt16(2)});
+            }
+
+            return (dateTimeInfoList, true);
+        }
+        else
+        {
+            return (null, false)!;
+        }
     }
 }
