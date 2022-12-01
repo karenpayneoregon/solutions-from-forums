@@ -1,4 +1,4 @@
-﻿# About
+﻿# JSON.NET and DateOnly/TimeOnly support
 
 Code samples for Json.net which as of version 13.0.2 now supports [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-7.0) and [TimeOnly](https://learn.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-7.0). Three code samples are used to show interactions with [Bogus](https://github.com/bchavez/Bogus) and [Microsoft.Data.SqlClient](https://github.com/dotnet/SqlClient/blob/main/release-notes/5.1/5.1.0-preview2.md) which is most likely used to work with json data.
 
