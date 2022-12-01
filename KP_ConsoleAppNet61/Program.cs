@@ -11,7 +11,7 @@ internal partial class Program
         /*
          * IMPORTANT: Change to a folder with many files with many files in sub-folders
          */
-        var folder = @"c:\Users\****\Documents\Snagit";
+        var folder = @"c:\Users\paynek\Documents\Snagit";
         
 
 
