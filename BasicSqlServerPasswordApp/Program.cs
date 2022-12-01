@@ -37,7 +37,7 @@ internal partial class Program
         var name = SpectreOperations.AskLoginName();
         var password = SpectreOperations.AskPassword();
 
-        var result = DataOperations.SpectreOperations(new User() { Name = name, Password = password.ToSecureString() });
+        var result = DataOperations.AddUser(new User() { Name = name, Password = password.ToSecureString() });
 
         AnsiConsole.MarkupLine($"[white]Id[/] {result} [white]for[/] {name}");
         AnsiConsole.MarkupLine("[white on blue]To menu[/]");

@@ -45,6 +45,11 @@ public class DataOperations
         using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
         using var cmd = new SqlCommand() { Connection = cn };
 
+        /*
+         * Note:
+         * (@Password) as ValidItem is used if you want to load results into a DataTable which
+         * makes it easy for debugging, otherwise no need for the alias.
+         */
         cmd.CommandText = "SELECT Id,[dbo].[Password_Check] (@Password) as ValidItem FROM dbo.Users1 AS u  WHERE u.UserName = @UserName";
         cmd.Parameters.Add("@UserName", SqlDbType.NChar).Value = username;
         cmd.Parameters.Add("@Password", SqlDbType.NChar).Value = password.ToUnSecureString();
@@ -99,8 +104,10 @@ public class DataOperations
     /// </summary>
     /// <param name="user"></param>
     /// <returns>Primary key</returns>
-    public static int AddUserReturnPrimaryKey(User user)
+    /// <remarks>Exception handling left out for clarity</remarks>
+    public static int AddUser(User user)
     {
+
         using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
         using var cmd = new SqlCommand() { Connection = cn };
 
