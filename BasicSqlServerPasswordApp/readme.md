@@ -115,6 +115,40 @@ public static bool ValidateUser2(string username, SecureString password)
 }
 ```
 
+# Add new user
+
+- When adding a new record `HASHBYTES('SHA2_512', @Password))` hashs the given password.
+- The second query `SELECT CAST(scope_identity() AS int)` is used to obtain the new primary key for the user and is returned to the caller, an alternate is to set the `User.Id` and return nothing.
+
+```csharp
+public static int AddUser(User user)
+{
+    using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
+    using var cmd = new SqlCommand() { Connection = cn };
+
+
+    cmd.CommandText = "INSERT INTO Users1 (UserName, [Password]) VALUES (@UserName, HASHBYTES('SHA2_512', @Password));" +
+                        "SELECT CAST(scope_identity() AS int);";
+
+    cmd.Parameters.Add("@UserName", SqlDbType.NChar).Value = user.Name;
+    cmd.Parameters.Add("@Password", SqlDbType.VarChar).Value = user.Password.ToUnSecureString();
+
+    cn.Open();
+
+    return Convert.ToInt32(cmd.ExecuteScalar());
+
+}
+```
+
+# Scripts
+
+Recommend running these scripts in SQL-Server Management Studio.
+
+- script.sql need to run to create the database
+- InsertStatements.sql provides insert statements to get started with rather than needing to add several records in the app which in turn allows testing the login right away.
+- PasswordCheckFunction.sql is needed to check password hashes and is hard coded to `Users1` table.
+
+
 ## Next steps
 
 - Placing desired option into a class project.
@@ -137,5 +171,5 @@ Use the following to see the code work then provide invalid information.
 
 # Ending notes
 
-I kept the code sample simple so they can be used `as is` or modified to suit indivdual requirements.
+I kept the code sample simple so they can be used `as is` or modified to suit indivdual requirements. There are variations to each method that a developer can choice and optionally add assertion to ensure user name and password are not empty and met password rules, there are libraries for this like [Easy.Password.Validator](https://www.nuget.org/packages/Easy.Password.Validator) and exception handling.
 

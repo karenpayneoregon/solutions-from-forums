@@ -1,4 +1,5 @@
 ﻿using BasicSqlServerPasswordApp.Classes;
+using BasicSqlServerPasswordApp.Models;
 
 namespace BasicSqlServerPasswordApp;
 
@@ -7,15 +8,57 @@ internal partial class Program
     static void Main(string[] args)
     {
 
-        var (success, id) = DataOperations.ValidateUser3("payneoregn", "!FirstOnMonday".ToSecureString());
-        SpectreOperations.DrawHeader();
-        
-        var name = SpectreOperations.AskLoginName();
-        var password = SpectreOperations.AskPassword();
-        
+        while (true)
+        {
+            Console.Clear();
+            SpectreOperations.DrawMainHeader();
+            var menuItem = AnsiConsole.Prompt(SelectionPrompt());
+            if (menuItem.Id != -1)
+            {
+                menuItem.Action();
+            }
+            else
+            {
+                return;
+            }
+        }
+    }
+
+
+    /// <summary>
+    /// Add new user using HASHBYTES
+    /// </summary>
+    private static void AddNewUser()
+    {
         Console.Clear();
 
-        if (Sample3(name,password))
+        SpectreOperations.DrawAddUserHeader();
+
+        var name = SpectreOperations.AskLoginName();
+        var password = SpectreOperations.AskPassword();
+
+        var result = DataOperations.SpectreOperations(new User() { Name = name, Password = password.ToSecureString() });
+
+        AnsiConsole.MarkupLine($"[white]Id[/] {result} [white]for[/] {name}");
+        AnsiConsole.MarkupLine("[white on blue]To menu[/]");
+        Console.ReadLine();
+    }
+
+    /// <summary>
+    /// Used to demo logging in a user
+    /// </summary>
+    private static void LoginMain()
+    {
+        Console.Clear();
+
+        SpectreOperations.DrawLoginHeader();
+
+        var name = SpectreOperations.AskLoginName();
+        var password = SpectreOperations.AskPassword();
+
+        Console.Clear();
+
+        if (Sample3(name, password))
         {
             SpectreOperations.DrawWelcomeHeader();
         }
@@ -24,16 +67,20 @@ internal partial class Program
             SpectreOperations.DrawGoAwayHeader();
         }
 
-        AnsiConsole.MarkupLine("[white on blue]Exit[/]");
+        AnsiConsole.MarkupLine("[white on blue]To menu[/]");
         Console.ReadLine();
-
     }
 
     // old, may not be supported in newer versions of SQL-Server
-    private static bool Sample1(string userName, string password) => DataOperations.ValidateUser(userName, password!.ToSecureString()!);
-    // does separate checks for name and password
-    private static bool Sample2(string userName, string password) => DataOperations.ValidateUser1(userName, password!.ToSecureString()!);
+    private static bool Sample1(string userName, string password)
+        => DataOperations.ValidateUser(userName, password!.ToSecureString()!);
+    
     // does combined name and password in one statement
-    private static bool Sample3(string userName, string password) => DataOperations.ValidateUser2(userName, password!.ToSecureString()!);
+    private static bool Sample3(string userName, string password) 
+        => DataOperations.ValidateUser1(userName, password!.ToSecureString()!);
+
+    // Same as Sample3 but returns the primary key
+    private static (bool success, int? id) Sample4(string userName, string password) 
+        => DataOperations.ValidateUser2(userName, password!.ToSecureString()!);
 
 }

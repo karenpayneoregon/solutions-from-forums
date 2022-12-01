@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using NotesRazorApp.Data;
 using NotesRazorApp.Models;
+#pragma warning disable CS8618
 
 namespace NotesRazorApp.Pages;
 

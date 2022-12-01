@@ -24,7 +24,7 @@ public class SpectreOperations
     }
 
 
-    public static void DrawHeader()
+    public static void DrawLoginHeader()
     {
         Render(
             new Rule()
@@ -75,6 +75,40 @@ public class SpectreOperations
         Render(
             new Rule()
                 .RuleStyle(Style.Parse("red"))
+                .HeavyBorder()
+                .LeftAligned());
+    }
+
+    public static void DrawAddUserHeader()
+    {
+        Render(
+            new Rule()
+                .RuleStyle(Style.Parse("green"))
+                .HeavyBorder()
+                .LeftAligned());
+
+        AnsiConsole.Write(new FigletText("Add New User").Centered().Color(Color.Green));
+
+        Render(
+            new Rule()
+                .RuleStyle(Style.Parse("green"))
+                .HeavyBorder()
+                .LeftAligned());
+    }
+
+    public static void DrawMainHeader()
+    {
+        Render(
+            new Rule()
+                .RuleStyle(Style.Parse("green"))
+                .HeavyBorder()
+                .LeftAligned());
+
+        AnsiConsole.Write(new FigletText("Passwording").Centered().Color(Color.Green));
+
+        Render(
+            new Rule()
+                .RuleStyle(Style.Parse("green"))
                 .HeavyBorder()
                 .LeftAligned());
     }
