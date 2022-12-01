@@ -9,7 +9,7 @@ namespace NewtonsoftDateOnlyTimeOnlyApp
         public static void Init()
         {
             AnsiConsole.MarkupLine("");
-            Console.Title = "Code sample";
+            Console.Title = "Code sample: Newtonsoft/Json.net supporting DateOnly and TimeOnly";
             WindowUtility.SetConsoleWindowPosition(WindowUtility.AnchorWindow.Center);
         }
 
@@ -22,10 +22,15 @@ namespace NewtonsoftDateOnlyTimeOnlyApp
         private static void ExitPrompt()
         {
             Console.WriteLine();
-            Render(new Rule($"[white on blue]Press a key to exit[/]")
-                .RuleStyle(Style.Parse("cyan"))
-                .Centered());
+            Render(new Rule($"[white on blue]Press a key to exit[/]").RuleStyle(Style.Parse("cyan")).Centered());
             Console.ReadLine();
         }
+
+        public static void LineBreak()
+        {
+            Render(new Rule().RuleStyle(Style.Parse("cyan")));
+        }
+
+
     }
 }

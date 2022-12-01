@@ -1,6 +1,12 @@
 ﻿# About
 
-Code samples for Json.net which as of version 13.0.2 now supports [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-7.0) and [TimeOnly](https://learn.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-7.0).
+Code samples for Json.net which as of version 13.0.2 now supports [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-7.0) and [TimeOnly](https://learn.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-7.0). Three code samples are used to show interactions with [Bogus](https://github.com/bchavez/Bogus) and [Microsoft.Data.SqlClient](https://github.com/dotnet/SqlClient/blob/main/release-notes/5.1/5.1.0-preview2.md) which is most likely used to work with json data.
+
+| Sample        |   Description    |
+|:------------- |:-------------|
+| Sample1 | Created a list of mocked people, serialize then deserialize with Json.net | 
+| Sample2 | Same as Sample1 but uses Bogus NuGet package to create a list. Bogus just began support for DateOnly and TimeOnly with Json.net | 
+| DataOperations.Read | Reads DateOnly and TimeOnly from a SQL-Server database using a preview2 version of Microsoft.Data.SqlClient to seriale to json with Json.net | 
 
 
 **json**
