@@ -9,6 +9,13 @@ Code samples for Json.net which as of version 13.0.2 now supports [DateOnly](htt
 | DataOperations.Read | Reads DateOnly and TimeOnly from a SQL-Server database using a preview2 version of Microsoft.Data.SqlClient to seriale to json with Json.net | 
 
 
+# Requires
+
+- Microsoft [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2022 v17.4 or higher
+- For the data read sample, [SQLEXPRESS](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
+
+---
+
 **json**
 
 ```json
