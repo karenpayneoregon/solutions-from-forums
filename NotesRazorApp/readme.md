@@ -2,6 +2,10 @@
 
 Shows basics of working with two related tables created with EF Core in the project NotesFormApp.
 
+See also, the following [readme](Article/readme.md).
+
+![Front](Article/Assets/front.png)
+
 ## Editing 
 
 When Visual Studio scaffords a Razor Page using models defined in the project where there are navigations, the default is to display a drop-down with the primary key rather than the text. In this case the model `Note` has a navigation of type `Category`. 
