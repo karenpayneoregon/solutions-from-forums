@@ -3,9 +3,14 @@
 @{
 }
 
+@*
+    Basically tinkering
+*@
+
 <div>
     Modal dialog in partial page
 </div>
+
 
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     <i class="bi-arrow-right-circle me-2" style="font-size: 1rem; color: white;"></i>Modal centered dialog
@@ -22,6 +27,8 @@
             aria-controls="collapseExample">
         Phrases
     </button>
+
+    <button class="btn btn-primary" type="button" onclick="toggleSurprise()">Surprise</button>
 
 </div>
 
@@ -80,3 +87,9 @@
 
 </div>
 
+<div class="mt-4">
+    <canvas class=" h-25 w-50 border border-danger" style="display: block" id="canvas"></canvas>
+</div>
+
+<script type="text/javascript" src="js/_about.js"></script>
+<link rel="stylesheet" href="css/_about.css" />
