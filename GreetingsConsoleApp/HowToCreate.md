@@ -150,3 +150,11 @@ AnsiConsole.MarkupLine($"[cyan]{Helpers.TimeOfDay()}[/] [yellow]{firstName}[/]")
 ```
 
 Remove TimeOfDay from the Program class and done, run the program.
+
+# Target multiple Frameworks
+
+Microsoft docs: [Create a project that supports multiple .NET Framework versions](https://learn.microsoft.com/en-us/nuget/create-packages/multiple-target-frameworks-project-file#create-a-project-that-supports-multiple-net-framework-versions)
+
+
+![Target](assets/target.png)
+

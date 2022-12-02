@@ -3,7 +3,7 @@ using Spectre.Console;
 
 namespace GreetingsConsoleApp;
 
-class Program
+partial class Program
 {
     public static void Main(string[] args)
     {
@@ -15,9 +15,8 @@ class Program
         if (!string.IsNullOrWhiteSpace(firstName))
         {
             AnsiConsole.MarkupLine($"[cyan]{Helpers.TimeOfDay()}[/] [yellow]{firstName}[/]");
-            Console.ReadLine();
+            ExitPrompt();
         }
     }
-
 
 }
