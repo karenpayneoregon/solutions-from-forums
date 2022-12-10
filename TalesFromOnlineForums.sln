@@ -38,7 +38,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateDynamicControls", "Cr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlServerDateTime2PrecisionApp", "SqlServerDateTime2PrecisionApp\SqlServerDateTime2PrecisionApp.csproj", "{4AF0AF43-FE35-44E6-818B-DF43108BD005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftDateOnlyTimeOnlyApp", "NewtonsoftDateOnlyTimeOnlyApp\NewtonsoftDateOnlyTimeOnlyApp.csproj", "{B443D9DC-39CB-4FD4-AED3-23310E63AA1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewtonsoftDateOnlyTimeOnlyApp", "NewtonsoftDateOnlyTimeOnlyApp\NewtonsoftDateOnlyTimeOnlyApp.csproj", "{B443D9DC-39CB-4FD4-AED3-23310E63AA1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildUsingExampleApp", "MSBuildUsingExampleApp\MSBuildUsingExampleApp.csproj", "{C9C321FA-8087-436E-91CA-941DDA8F9909}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -90,6 +92,10 @@ Global
 		{B443D9DC-39CB-4FD4-AED3-23310E63AA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B443D9DC-39CB-4FD4-AED3-23310E63AA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B443D9DC-39CB-4FD4-AED3-23310E63AA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C321FA-8087-436E-91CA-941DDA8F9909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C321FA-8087-436E-91CA-941DDA8F9909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C321FA-8087-436E-91CA-941DDA8F9909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C321FA-8087-436E-91CA-941DDA8F9909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{B09FA7C0-E3C2-4DDD-A7CC-8D7046A1041A} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
 		{4AF0AF43-FE35-44E6-818B-DF43108BD005} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
 		{B443D9DC-39CB-4FD4-AED3-23310E63AA1A} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
+		{C9C321FA-8087-436E-91CA-941DDA8F9909} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7591A428-3162-447A-841E-2476901C3B3A}
