@@ -28,6 +28,9 @@ internal partial class Program
         Console.ReadLine();
     }
 
+    /// <summary>
+    /// This is to demo R# ability to convert the string to a raw string literal
+    /// </summary>
     public static void Demo()
     {
         var json = @"[
