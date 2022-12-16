@@ -30,8 +30,7 @@ internal class DateTime2Operations
             var formatted2 = created.ToString($"MM/dd/yyyy hh:mm:ss.fff");
             var formatted3 = created.ToString($"MM/dd/yyyy hh:mm:ss.ff");
 
-            table1.AddRow("Date time value", created.ToString(CultureInfo.CurrentCulture), "", created.Millisecond.ToString(), 
-                created.TimeOfDay.ToString());
+            table1.AddRow("Date time value", created.ToString(CultureInfo.CurrentCulture), "", created.Millisecond.ToString(), created.TimeOfDay.ToString());
             table1.AddRow("Date time value formatted", formatted1, millisecondsFormat, created.Millisecond.ToString());
             table1.AddRow("Date time value formatted", formatted2, "fff");
             table1.AddRow("Date time value formatted", formatted3, "ff");

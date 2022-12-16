@@ -40,7 +40,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlServerDateTime2Precision
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewtonsoftDateOnlyTimeOnlyApp", "NewtonsoftDateOnlyTimeOnlyApp\NewtonsoftDateOnlyTimeOnlyApp.csproj", "{B443D9DC-39CB-4FD4-AED3-23310E63AA1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildUsingExampleApp", "MSBuildUsingExampleApp\MSBuildUsingExampleApp.csproj", "{C9C321FA-8087-436E-91CA-941DDA8F9909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSBuildUsingExampleApp", "MSBuildUsingExampleApp\MSBuildUsingExampleApp.csproj", "{C9C321FA-8087-436E-91CA-941DDA8F9909}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

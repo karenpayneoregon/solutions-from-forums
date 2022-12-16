@@ -23,15 +23,17 @@
 
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+		<!-- ReSharper disable once VulnerablePackage -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="ConfigurationLibrary" Version="1.0.1" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.12">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+		<!-- ReSharper disable once VulnerablePackage -->
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Article\Assets\" />
