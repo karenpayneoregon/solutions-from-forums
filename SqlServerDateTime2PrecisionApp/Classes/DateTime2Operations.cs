@@ -14,8 +14,8 @@ internal class DateTime2Operations
     {
         var table1 = CreateDataReaderTable();
 
-        using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
-        using var cmd = new SqlCommand { Connection = cn, CommandText = "SELECT Created FROM dbo.AuditLog" };
+        using SqlConnection cn = new (ConfigurationHelper.ConnectionString());
+        using SqlCommand cmd = new() { Connection = cn, CommandText = "SELECT Created FROM dbo.AuditLog" };
 
         cn.Open();
         

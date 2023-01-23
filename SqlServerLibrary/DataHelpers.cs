@@ -9,7 +9,14 @@ public class DataHelpers
     public static bool TablesArePopulated(string connectionString)
     {
         using var cn = new SqlConnection(connectionString);
-        using var cmd = new SqlCommand("SELECT T.name TableName,i.Rows NumberOfRows FROM sys.tables T JOIN sys.sysindexes I ON T.OBJECT_ID = I.ID WHERE indid IN (0,1) ORDER BY i.Rows DESC,T.name", cn);
+        using var cmd = new SqlCommand("""
+            SELECT 
+                T.name TableName,
+                i.Rows NumberOfRows 
+            FROM sys.tables T JOIN sys.sysindexes I ON T.OBJECT_ID = I.ID 
+            WHERE indid IN (0,1) 
+            ORDER BY i.Rows DESC,T.name
+        """, cn);
 
         DataTable table = new DataTable();
         cn.Open();
@@ -43,7 +50,17 @@ public class DataHelpers
     {
         List<DateTimeInformation> dateTimeInfoList = new();
         using var cn = new SqlConnection(connectionString);
-        using var cmd = new SqlCommand("SELECT TABLE_NAME,COLUMN_NAME,DATETIME_PRECISION FROM INFORMATION_SCHEMA.COLUMNS WHERE DATA_TYPE = 'datetime2' AND TABLE_NAME = @TableName;", cn);
+        using var cmd = new SqlCommand(
+            """
+                SELECT 
+                    TABLE_NAME,
+                    COLUMN_NAME,
+                    DATETIME_PRECISION 
+                FROM 
+                    INFORMATION_SCHEMA.COLUMNS 
+                WHERE DATA_TYPE = 'datetime2' AND TABLE_NAME = @TableName; 
+                """, cn);
+
         cmd.Parameters.Add("@TableName", SqlDbType.NChar).Value = tableName;
 
         cn.Open();
@@ -53,7 +70,12 @@ public class DataHelpers
         {
             while (reader.Read())
             {
-                dateTimeInfoList.Add(new DateTimeInformation() {TableName = reader.GetString(0), ColumnName = reader.GetString(1), Precision = reader.GetInt16(2)});
+                dateTimeInfoList.Add(new DateTimeInformation()
+                {
+                    TableName = reader.GetString(0), 
+                    ColumnName = reader.GetString(1), 
+                    Precision = reader.GetInt16(2)
+                });
             }
 
             return (dateTimeInfoList, true);

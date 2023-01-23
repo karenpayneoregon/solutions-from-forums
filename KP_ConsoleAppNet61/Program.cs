@@ -1,5 +1,4 @@
 ﻿using System.Security.Cryptography;
-using System.Text.RegularExpressions;
 using KP_ConsoleAppNet61.Classes;
 
 namespace KP_ConsoleAppNet61;
