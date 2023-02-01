@@ -46,6 +46,13 @@ public class DataHelpers
 
     }
 
+    public static void TruncateTable(string connectionString, string tableName)
+    {
+        using var cn = new SqlConnection(connectionString);
+        using var cmd = new SqlCommand($"TRUNCATE TABLE {tableName}); ", cn);
+        cn.Open();
+        cmd.ExecuteNonQuery();
+    }
     public static (List<DateTimeInformation> list, bool hasColumns) GetDateTimeInformation(string connectionString, string tableName)
     {
         List<DateTimeInformation> dateTimeInfoList = new();
