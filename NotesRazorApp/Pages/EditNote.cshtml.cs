@@ -49,7 +49,7 @@ public class EditNoteModel : PageModel
     private void SetupCategories()
     {
         ViewData["CategoryName"] = new SelectList(
-            _context.Category.ToList(),
+            _context.Category.OrderBy(x => x.CategoryName).ToList(),
             nameof(Note.CategoryId),
             nameof(Note.Category.CategoryName));
     }

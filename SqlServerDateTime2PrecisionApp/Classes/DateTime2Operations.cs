@@ -50,7 +50,7 @@ internal class DateTime2Operations
         foreach (DataRow row in dataTable.Rows)
         {
             table2.AddRow(
-                row.Field<DateTime>("Created").ToString(),
+                row.Field<DateTime>("Created").ToString(CultureInfo.InvariantCulture),
                 row.Field<DateTime>("Created").ToString($"MM/dd/yyyy hh:mm:ss.{millisecondsFormat}"));
         }
 
