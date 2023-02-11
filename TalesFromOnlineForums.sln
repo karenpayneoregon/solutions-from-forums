@@ -46,7 +46,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindingListLibrary", "Bindi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGridViewExport", "DataGridViewExport\DataGridViewExport.csproj", "{8039BC05-F4ED-42F7-9054-DA44C1DEEDD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableScreenSaverCore", "DisableScreenSaverCore\DisableScreenSaverCore.csproj", "{D28BB7D5-DF4D-45E1-B2C4-AD9C2B4DC963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisableScreenSaverCore", "DisableScreenSaverCore\DisableScreenSaverCore.csproj", "{D28BB7D5-DF4D-45E1-B2C4-AD9C2B4DC963}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateDynamicTextBoxes", "CreateDynamicTextBoxes\CreateDynamicTextBoxes.csproj", "{35198412-B466-4A8D-AA92-1ABF3EC512B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -114,6 +116,10 @@ Global
 		{D28BB7D5-DF4D-45E1-B2C4-AD9C2B4DC963}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D28BB7D5-DF4D-45E1-B2C4-AD9C2B4DC963}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D28BB7D5-DF4D-45E1-B2C4-AD9C2B4DC963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35198412-B466-4A8D-AA92-1ABF3EC512B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35198412-B466-4A8D-AA92-1ABF3EC512B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35198412-B466-4A8D-AA92-1ABF3EC512B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35198412-B466-4A8D-AA92-1ABF3EC512B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +140,7 @@ Global
 		{4FF68027-EDCF-4EAC-83B2-AF6C21C95AB1} = {EDBFA07E-C980-4B74-A006-8A695FE574C8}
 		{8039BC05-F4ED-42F7-9054-DA44C1DEEDD2} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
 		{D28BB7D5-DF4D-45E1-B2C4-AD9C2B4DC963} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
+		{35198412-B466-4A8D-AA92-1ABF3EC512B7} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7591A428-3162-447A-841E-2476901C3B3A}
