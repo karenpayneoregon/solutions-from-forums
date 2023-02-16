@@ -1,0 +1,44 @@
+﻿@page
+@using RadioButtonsExample.Models
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model RadioButtonsExample.Pages.RadioButton1Model
+@{
+}
+<div class="container mt-4">
+
+    <div class="card mt-4 mb-4 bg-light  shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">Working with radio buttons</h5>
+            <p class="card-text">Keeping things simple using a <mark>string array</mark>, other options are reading from a database table or using enums</p>
+        </div>
+    </div>
+
+    <form method="post">
+
+        <div>
+
+            @foreach (Shape shape in Model.Shapes)
+            {
+                <div class="form-check">
+
+@*                    <input type="radio" class="form-check-input" asp-for="Shape" value="@shape" id="Shape@(shape.Name)" />
+                    <label class="form-check-label" for="Shape@(shape.Name)">@shape</label>
+*@                    
+                    
+                    
+                    <input type="radio" class="form-check-input" asp-for="Shape" value="@shape" id="@shape.Name" />
+                    <label class="form-check-label" for="@shape.Name">@shape</label>
+                </div>
+
+            }
+
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" class="btn btn-primary mt-2" />
+        </div>
+
+    </form>
+
+
+</div>
