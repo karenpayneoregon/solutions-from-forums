@@ -9,9 +9,9 @@ namespace RadioButtonsExample.Pages
     public class RadioButton1Model : PageModel
     {
      
-        public List<Shape> Shapes { get; set; } = Operations.Shapes;
+        public List<Shape?> Shapes { get; set; } = Operations.Shapes;
         [BindProperty]
-        public Shape Shape { get; set; }
+        public Shape? Shape { get; set; }
 
 
         public void OnGet()
