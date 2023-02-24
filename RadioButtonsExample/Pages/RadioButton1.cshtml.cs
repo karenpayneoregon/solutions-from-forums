@@ -9,21 +9,35 @@ namespace RadioButtonsExample.Pages
     public class RadioButton1Model : PageModel
     {
      
-        public List<Shape?> Shapes { get; set; } = Operations.Shapes;
+        public List<Shape?> Shapes { get; set; } 
+        [BindProperty]
+        public int Identifier { get; set; }
         [BindProperty]
         public Shape? Shape { get; set; }
 
 
+        public RadioButton1Model()
+        {
+            Shapes = Operations.Shapes;
+        }
         public void OnGet()
         {
+            Shapes = Operations.Shapes;
             Shape = Shapes[1];
-        }
-        public async Task<IActionResult> OnPost()
-        {
-            await Task.Delay(0);
+            Identifier = 3;
 
-            var selection = Shape;
-            return Page();
         }
+
+        public void OnPostSubmit(int identifier)
+        {
+
+            var shape = Shapes.FirstOrDefault(x => x.Id == identifier);
+            if (shape is not null)
+            {
+                
+            }
+
+        }
+
     }
 }

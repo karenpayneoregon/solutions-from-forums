@@ -20,14 +20,8 @@
             @foreach (Shape? shape in Model.Shapes)
             {
                 <div class="form-check">
-
-@*                    <input type="radio" class="form-check-input" asp-for="Shape" value="@shape" id="Shape@(shape.Name)" />
-                    <label class="form-check-label" for="Shape@(shape.Name)">@shape</label>
-*@                    
-                    
-                    
-                    <input type="radio" class="form-check-input" asp-for="Shape" value="@shape" id="@shape.Name" />
-                    <label class="form-check-label" for="@shape.Name">@shape</label>
+                    <input id="@shape.Id" type="radio" name="Identifier" value="@shape.Id" />
+                    <label for="@shape.Id">@shape</label>
                 </div>
 
             }
@@ -35,7 +29,7 @@
         </div>
 
         <div>
-            <input type="submit" value="Submit" class="btn btn-primary mt-2" />
+            <input type="submit" value="Submit" class="btn btn-primary mt-2" asp-page-handler="Submit" />
         </div>
 
     </form>
