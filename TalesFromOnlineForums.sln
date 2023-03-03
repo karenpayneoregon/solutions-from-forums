@@ -44,8 +44,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioButtonsExample", "Radi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComboBoxDemo", "ComboBoxDemo\ComboBoxDemo.csproj", "{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithSqlServerImages", "WorkingWithSqlServerImages\WorkingWithSqlServerImages.csproj", "{C4AE2DAC-7324-4E26-B9A9-4C5ABC6C5A1E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,10 +102,6 @@ Global
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4AE2DAC-7324-4E26-B9A9-4C5ABC6C5A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4AE2DAC-7324-4E26-B9A9-4C5ABC6C5A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4AE2DAC-7324-4E26-B9A9-4C5ABC6C5A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4AE2DAC-7324-4E26-B9A9-4C5ABC6C5A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,7 +119,6 @@ Global
 		{89F7F1A9-050D-46EE-9052-8922A621F88B} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
 		{4895B4AF-BDD8-433B-835B-CBBF8441ED46} = {C96BB12B-C00E-4C41-9550-1DE40A2D980E}
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
-		{C4AE2DAC-7324-4E26-B9A9-4C5ABC6C5A1E} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7591A428-3162-447A-841E-2476901C3B3A}
