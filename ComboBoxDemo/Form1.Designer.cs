@@ -32,6 +32,9 @@ partial class Form1
             this.GetButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.multiColumnComboBox1 = new ComboBoxDemo.Classes.MultiColumnComboBox();
+            this.CurrentButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -65,7 +68,7 @@ partial class Form1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(694, 76);
+            this.button2.Location = new System.Drawing.Point(694, 64);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
             this.button2.TabIndex = 3;
@@ -73,17 +76,50 @@ partial class Form1
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(694, 110);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(94, 29);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // multiColumnComboBox1
+            // 
+            this.multiColumnComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.multiColumnComboBox1.FormattingEnabled = true;
+            this.multiColumnComboBox1.Location = new System.Drawing.Point(12, 124);
+            this.multiColumnComboBox1.Name = "multiColumnComboBox1";
+            this.multiColumnComboBox1.Size = new System.Drawing.Size(151, 28);
+            this.multiColumnComboBox1.TabIndex = 5;
+            // 
+            // CurrentButton
+            // 
+            this.CurrentButton.Location = new System.Drawing.Point(195, 124);
+            this.CurrentButton.Name = "CurrentButton";
+            this.CurrentButton.Size = new System.Drawing.Size(94, 29);
+            this.CurrentButton.TabIndex = 6;
+            this.CurrentButton.Text = "Current";
+            this.CurrentButton.UseVisualStyleBackColor = true;
+            this.CurrentButton.Click += new System.EventHandler(this.CurrentButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CurrentButton);
+            this.Controls.Add(this.multiColumnComboBox1);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GetButton);
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
     }
@@ -94,4 +130,7 @@ partial class Form1
     private Button GetButton;
     private Button button1;
     private Button button2;
+    private Button button3;
+    private Classes.MultiColumnComboBox multiColumnComboBox1;
+    private Button CurrentButton;
 }

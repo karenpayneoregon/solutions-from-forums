@@ -1,6 +1,8 @@
 ﻿using System.Text.Json;
+using KP_ConsoleAppNet62.Classes;
 using KP_ConsoleAppNet62.Data;
 using KP_ConsoleAppNet62.Models;
+using Container = KP_ConsoleAppNet62.Models.Container;
 
 namespace KP_ConsoleAppNet62;
 
@@ -11,6 +13,9 @@ internal partial class Program
     static void Main(string[] args)
     {
 
+        JsonOperations.Read();
+        Console.ReadLine();
+        return;
 
         // table seeded with three duplicate records out of 100
         using var context = new Context();
@@ -30,6 +35,11 @@ internal partial class Program
         Console.WriteLine($"GroupBy {list.Count}");
         Console.WriteLine();
 
+        Console.ReadLine();
+    }
+
+    private static void RawStringLiteralSimple()
+    {
         var input = """
         {
             "@context": "https ://www.w3.org/ns/activitystreams", 
@@ -40,72 +50,7 @@ internal partial class Program
         """;
 
         Console.WriteLine(input);
-        var json = JsonSerializer.Deserialize<Rootobject>(input);
-        Console.ReadLine();
-    }
-
-    private static void RandomExample()
-    {
-        Helper.Initialize(20);
-        for (int index = 0; index < 25; index++)
-        {
-            var (success, value) = Helper.TryGet();
-            if (success)
-            {
-                Console.WriteLine($"{value} {_counter}");
-                _counter++;
-            }
-            else
-            {
-                Console.WriteLine("HashSet is empty");
-                break;
-            }
-        }
+        var json = JsonSerializer.Deserialize<Container>(input);
     }
 }
 
-public class Helper
-{
-    private static HashSet<string> HashSet;
-
-    public static void Initialize(int capacity)
-    {
-        HashSet = new HashSet<string>();
-        for (int index = 0; index < capacity; index++)
-        {
-            HashSet.Add(GenerateRandomString());
-        }
-    }
-
-    public static (bool success, string value) TryGet()
-    {
-        if (HashSet.Count > 0)
-        {
-            var value = HashSet.FirstOrDefault();
-            HashSet.Remove(HashSet.FirstOrDefault()!);
-            return (true, value)!;
-        }
-        else
-        {
-            return (false, null)!;
-        }
-    }
-    public static string GenerateRandomString(int length = 5)
-    {
-        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-        var random = new Random();
-        return new string(Enumerable.Repeat(chars, length)
-            .Select(item => item[random.Next(item.Length)]).ToArray());
-    }
-
-}
-
-
-public class Rootobject
-{
-    public string context { get; set; }
-    public string type { get; set; }
-    public string id { get; set; }
-    public string name { get; set; }
-}
