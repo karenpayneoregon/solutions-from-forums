@@ -3,11 +3,11 @@
 namespace KP_ConsoleAppNet62.Classes;
 internal class JsonOperations
 {
-    private static string sourceFileName => "wcag.json";
+    private static string SourceFileName => "wcag.json";
 
     public static void Read()
     {
-        var jsonString = File.ReadAllText(sourceFileName);
+        var jsonString = File.ReadAllText(SourceFileName);
         List<Container> data = JsonSerializer.Deserialize<List<Container>>(jsonString);
 
         int primaryKey = 1;
@@ -18,7 +18,7 @@ internal class JsonOperations
             primaryKey ++;
 
             Console.WriteLine(container.Id);
-            var related = container.WuhcagRelated;
+            var related = container.CagRelated;
             if (related is not null)
             {
                 string[] resultArray = Array.ConvertAll(related, x => x.ToString());

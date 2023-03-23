@@ -433,7 +433,7 @@
     "conformance_level": "AA",
     "wuhcag_summary": "Don't use images of text",
     "wuhcag_detail": "<p>Some of your users will visit your website using a text-only browser, or might have images turned off in a regular browser. Images of text cause problems, as they are harder for those users to understand.</p>\n<p>Images of text also cause problems for your users if they like to resize websites to read them more clearly because images do not work well this way. They also add to the time it takes your website to load, another key reason users will leave your website.</p>\n",
-    "wuhcag_tips": "<p>Images of text are subject to guidelines on colour contrast. See Guideline 1.4.3 and Guideline 1.4.6.</p>\n",
+    "wuhcag_tips": "<p>Images of text are subject to guidelines on color contrast. See Guideline 1.4.3 and Guideline 1.4.6.</p>\n",
     "wuhcag_what_to_do": "<ul>\n <li>Do not use an image of text when you can use plain text.</li>\n <li>Display quotes as text rather than images.</li>\n <li>Use CSS to style headings.</li>\n <li>Use CSS to style navigation menus as text.</li>\n</ul>\n",
     "wuchcag_exceptions": "<ul>\n <li>Brand logos.</li>\n <li>If using an image of text is essential because you can't achieve the effect with text (for example, presenting a particular example of typography).</li>\n <li>If the presentation can’t be achieved with the technology used to design the website. However, this exception is removed in Level AAA Guideline 1.4.9.</li>\n <li>Purely decorative text.</li>\n</ul>\n",
     "wuhcag_related": [
