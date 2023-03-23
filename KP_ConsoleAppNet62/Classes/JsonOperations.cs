@@ -10,9 +10,13 @@ internal class JsonOperations
         var jsonString = File.ReadAllText(sourceFileName);
         List<Container> data = JsonSerializer.Deserialize<List<Container>>(jsonString);
 
+        int primaryKey = 1;
 
         foreach (var container in data)
         {
+            container.Identifier = primaryKey;
+            primaryKey ++;
+
             Console.WriteLine(container.Id);
             var related = container.WuhcagRelated;
             if (related is not null)
@@ -34,25 +38,9 @@ internal class JsonOperations
                             ConformanceLevel = item[1].Substring(item[1].IndexOf(':') + 1)
                         });
                     }
-                    else
-                    {
-                        
-                    }
- 
                 }
             }
         }
 
     }
-}
-
-
-public static class LocalExtensions
-{
-public static string RemoveWhitespace(this string input)
-{
-    return new string(input.ToCharArray()
-        .Where(c => !Char.IsWhiteSpace(c))
-        .ToArray());
-}
 }

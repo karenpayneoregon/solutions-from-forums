@@ -4,6 +4,7 @@ namespace KP_ConsoleAppNet62.Classes;
 
 public class Container
 {
+    public int Identifier { get; set; }
     [JsonPropertyName("key")]
     public string Key { get; set; }
     [JsonPropertyName("id")]
