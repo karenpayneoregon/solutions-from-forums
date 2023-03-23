@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /WindowsNotifications/Stash.txt
 /BasicSqlServerPasswordApp/Scripts/CurrentWork.sql
+/sample.ps1
