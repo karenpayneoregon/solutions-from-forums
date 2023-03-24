@@ -4,6 +4,19 @@ namespace KP_ConsoleAppNet62.Classes;
 internal class JsonOperations
 {
     private static string SourceFileName => "wcag.json";
+    private static string DestinationFileName => "wcagNew.json";
+
+    public static void ReadNewFile()
+    {
+        var jsonString = File.ReadAllText(DestinationFileName);
+        List<Container> data = JsonSerializer.Deserialize<List<Container>>(jsonString);
+
+        var item  = data.FirstOrDefault(x => x.Identifier ==2);
+        if (item != null) Console.WriteLine(item.Detail);
+
+        var doubleA = data.Where(x => x.ConformanceLevel == "AA");
+        Console.WriteLine(doubleA.Count());
+    }
 
     public static void Read()
     {
@@ -41,6 +54,9 @@ internal class JsonOperations
                 }
             }
         }
+
+        string json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(DestinationFileName, json);
 
     }
 }

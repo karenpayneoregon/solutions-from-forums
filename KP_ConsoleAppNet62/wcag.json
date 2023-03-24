@@ -1,4 +1,5 @@
-[{
+[
+  {
     "key": "1-1-1",
     "id": "text-equiv-all",
     "title": "Non-text Content",
@@ -11,16 +12,17 @@
     "wuhcag_what_to_do": "",
     "wuhcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-4-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-4-9",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-4-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-4-9",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-1",
     "id": "media-equiv-av-only-alt",
     "title": "Audio-only and Video-only (Prerecorded)",
@@ -33,28 +35,29 @@
     "wuhcag_what_to_do": "",
     "wuhcag_exceptions": "<p>If the content is itself an alternative (you don’t have to provide a transcript of the audio track you provided to explain the silent video you used).</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-2-7",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "1-2-8",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-2-7",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "1-2-8",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-2",
     "id": "media-equiv-captions",
     "title": "Captions (Pre-recorded)",
@@ -67,20 +70,21 @@
     "wuhcag_what_to_do": "<p>Adding captions to a video is a relatively hard task, compared to something like writing a text transcript or providing alternative text. Captions must be synchronised with the video to be useful, which means marking up the plain text with timestamps.</p>\n<p>There are plenty of paid services out there that will do your closed captioning for you, often at reasonable rates. There are also many free programs that will attempt to create your caption file for you, but none as good as human eyes and ears just yet. Like with many areas of web accessibility, your choice is between spending time (writing your own captions) or money (outsourcing).</p>\n<p>Google has written a very clear how-to guide on adding captions to YouTube videos, which I’m not going to try and better.</p>\n<p>Add captions to all videos with sound.</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-4",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-4",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-3",
     "id": "media-equiv-audio-desc",
     "title": "Audio Description or Media Alternative (Prerecorded)",
@@ -93,32 +97,33 @@
     "wuhcag_what_to_do": "<ul>\n\t<li>Provide a full text transcript of the video; or</li>\n\t<li>Provide a version of the video with audio description .</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-2-7",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "1-2-8",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-2-7",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "1-2-8",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-4",
     "id": "media-equiv-real-time-captions",
     "title": "Captions (Live)",
@@ -131,12 +136,13 @@
     "wuhcag_what_to_do": "<p>Use a content management system that allows captions to be added live and probably a professional subtitler to do it for you.</p>\n",
     "wuchcag_exceptions": "<p>If the video is an alternative for text.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-2-2",
-            "conformance_level": "A"
-        }
+      {
+        "key": "1-2-2",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-5",
     "id": "media-equiv-audio-desc-only",
     "title": "Audio Description (Prerecorded)",
@@ -149,24 +155,25 @@
     "wuhcag_what_to_do": "<p>Make an alternative version of your video with an audio description soundtrack and link to it from near the original content.</p>\n",
     "wuchcag_exceptions": "<p>You don’t need an audio description if all of the information in the video is provided in the regular soundtrack. Something like a straight face-to-face interview, or a speech to-camera would probably not need audio description.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-7",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "1-2-8",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-7",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "1-2-8",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-6",
     "id": "media-equiv-sign",
     "title": "Sign Language (Prerecorded)",
@@ -179,20 +186,21 @@
     "wuhcag_what_to_do": "<p>Make an alternative version of your video with a sign language interpreter embedded and link to it from near the original content.</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-3",
-            "conformance_level": "A"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-3",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-7",
     "id": "media-equiv-extended-ad",
     "title": "Extended Audio Description (Prerecorded)",
@@ -205,20 +213,21 @@
     "wuhcag_what_to_do": "<p>Make an alternative version of your video with an extended audio description soundtrack and link to it from near the original content.</p>\n",
     "wuchcag_exceptions": "<ul>\n <li>No audio description is needed if all of the information in the video is provided in the regular soundtrack. Something like a straight face-to-face interview, or a speech to-camera would probably not need audio description.</li>\n <li>You don’t need extended audio description if regular audio description can provide all of the information in the video.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-2-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-2-8",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-2-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-2-8",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-8",
     "id": "media-equiv-text-doc",
     "title": "Media Alternative (Prerecorded)",
@@ -231,20 +240,21 @@
     "wuhcag_what_to_do": "<ul>\n <li>Provide a full text transcript for your video and link to it from near the original content.</li>\n <li>If the video needs audio description, make sure that is also in place.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>If the video is itself an alternative, you don’t need to add a transcript.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-2-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-2-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-2-7",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-2-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-2-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-2-7",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-2-9",
     "id": "media-equiv-live-audio-only",
     "title": "Audio-only (Live)",
@@ -257,12 +267,13 @@
     "wuhcag_what_to_do": "<ul>\n <li>Add closed captions to live audio; or</li>\n <li>If the live broadcast is from a prepared script, make the script text available from near the original content.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-2-4",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-2-4",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-3-1",
     "id": "content-structure-separation-programmatic",
     "title": "Info and Relationships",
@@ -275,28 +286,29 @@
     "wuhcag_what_to_do": "<p>Complying with the need for good web page structure and formatting is a wide-ranging target. Half-measures don't work, so you can’t use subheadings properly and then throw random bullet points all over the place.</p>\n<p>Amongst other things, you must:</p>\n<ul>\n <li>Break up content with subheadings for new sections. </li>\n <li>Mark those headings with HTML header tags. </li>\n <li>Use the correct HTML for all structural elements. </li>\n <li>Use valid HTML everywhere else. </li>\n <li>Use clear labels on forms.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-3-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-6",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "2-4-10",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "4-1-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "1-3-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-6",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "2-4-10",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "4-1-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "1-3-2",
     "id": "content-structure-separation-sequence",
     "title": "Meaningful Sequence",
@@ -309,24 +321,25 @@
     "wuhcag_what_to_do": "<p>Ensuring you present your content in a meaningful sequence is a wide-ranging part of web accessibility. It applies to all elements of all pages, so is as big or as small a task as your website.</p>\n<p>Make sure you:</p>\n<ul>\n <li>Present content in a meaningful order.</li>\n <li>Separate navigation menus from content.</li>\n</ul>\n<p>Always present your content so that it preserves your meaning. That way, it’s great for anyone reading it. The main things to look out for are:</p>\n<ul>\n <li>Use paragraphs in order.</li>\n <li>Use headings to show importance.</li>\n <li>Choose whether a list needs numbering or not.</li>\n <li>Use valid HTML and check it with the W3C’s markup validator.15</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-3-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-6",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-3-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-6",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-3-3",
     "id": "content-structure-separation-understanding",
     "title": "Sensory Characteristics",
@@ -339,12 +352,13 @@
     "wuhcag_what_to_do": "<p>Getting sensory characteristics right is mainly a case of using your common sense. There are no technical requirements, just good and sensible copy writing:</p>\n<ul>\n <li>Use more than one sense for instructions.</li>\n <li>Avoid instructions that rely on sound.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-4-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "1-4-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "1-4-1",
     "id": "visual-audio-contrast-without-color",
     "title": "Use of Color",
@@ -357,9 +371,10 @@
     "wuhcag_what_to_do": "<p>Using colour is mainly a case of using your common sense:</p>\n<ul>\n <li>Instructions must not rely on colour alone.</li>\n <li>Other information (like charts and graphs) must not rely on colour alone.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        "1-4-1"
+      "1-4-1"
     ]
-},{
+  },
+  {
     "key": "1-4-2",
     "id": "visual-audio-contrast-dis-audio",
     "title": "Audio Control",
@@ -372,7 +387,8 @@
     "wuhcag_what_to_do": "<ul>\n  <li>Don’t have any audio that plays automatically.</li>\n  <li>Have all the audio you want, just let your users choose when they want to hear it.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>Although you can pass this guideline by adding a pause, mute or stop function to automatic audio, that’s a bad idea. You don't want your users frantically searching around your website for the audio control.</p>\n<p>Users shouldn't have to take action for a better experience, you need to provide it to them by default.</p>\n<p>There’s a further exception on audio that plays for less than three seconds. Ignore this too. Three seconds of audio can still distract users, especially those who have problems maintaining focus.</p>\n",
     "wuhcag_related": null
-},{
+  },
+  {
     "key": "1-4-3",
     "id": "visual-audio-contrast-contrast",
     "title": "Contrast (Minimum)",
@@ -385,20 +401,21 @@
     "wuhcag_what_to_do": "<p>Make sure the contrast ratio between your text and background is at least 4.5:1.</p>\n<p>Do this by:</p>\n<ul>\n <li>Using a light background and dark text; or</li>\n <li>Using a dark background and light text; and</li>\n <li>Using <a href=\"http://webaim.org/resources/contrastchecker/\">WebAim’s colour contrast checker</a> to verify your choice.</li>\n</ul>\n",
     "wuchcag_exceptions": "<ul>\n  <li>Text that is 18 points or larger (or 14 points or larger, if bold) must have a contrast of at least 3:1.</li>\n  <li>If the text is purely decorative. </li>\n  <li>If the text is an incidental part of an image (for example, a man who is reading a newspaper or a landscape that happens to include a street sign).</li>\n  <li>Brand logos.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-4-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-4-6",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "1-4-9",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-4-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-4-6",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "1-4-9",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-4-4",
     "id": "visual-audio-contrast-scale",
     "title": "Resize text",
@@ -411,20 +428,21 @@
     "wuhcag_what_to_do": "",
     "wuchcag_exceptions": "<ul>\n <li>Images of text (but don’t use images of text, because they don’t resize well).</li>\n <li>Captions.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-4-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-4-8",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "1-4-9",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-4-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-4-8",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "1-4-9",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-4-5",
     "id": "visual-audio-contrast-text-presentation",
     "title": "Images of Text",
@@ -437,24 +455,25 @@
     "wuhcag_what_to_do": "<ul>\n <li>Do not use an image of text when you can use plain text.</li>\n <li>Display quotes as text rather than images.</li>\n <li>Use CSS to style headings.</li>\n <li>Use CSS to style navigation menus as text.</li>\n</ul>\n",
     "wuchcag_exceptions": "<ul>\n <li>Brand logos.</li>\n <li>If using an image of text is essential because you can't achieve the effect with text (for example, presenting a particular example of typography).</li>\n <li>If the presentation can’t be achieved with the technology used to design the website. However, this exception is removed in Level AAA Guideline 1.4.9.</li>\n <li>Purely decorative text.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-4-3",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-4-6",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "1-4-9",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-4-3",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-4-6",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "1-4-9",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-4-6",
     "id": "visual-audio-contrast7",
     "title": "Contrast (Enhanced)",
@@ -467,12 +486,13 @@
     "wuhcag_what_to_do": "<p>Make sure the contrast ratio between your text and background is at least 7:1.</p>\n<p>Do this by:</p>\n<ul>\n <li>Using a light background and dark text; or</li>\n <li>Using a dark background and light text; and</li>\n <li>Using a colour contrast checker to verify your choice.</li>\n</ul>\n",
     "wuchcag_exceptions": "<ul>\n <li>Text that is 18 points or larger (or 14 points or larger, if bold) must have a contrast of at least 4.5:1.</li>\n <li>Where text is purely decorative – so you could have a block of different coloured words on a blue background if it didn't mean anything to your users and their order was random.</li>\n <li>Where the text is an incidental part of an image (for example, a man who is reading a newspaper or a landscape that happens to include a street sign).</li>\n <li>Brand logos.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-4-3",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-4-3",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-4-7",
     "id": "visual-audio-contrast-noaudio",
     "title": "Low or No Background Audio",
@@ -485,7 +505,8 @@
     "wuhcag_what_to_do": "<ul>\n <li>Make sure your pre-recorded audio does not contain any background noise; or</li>\n <li>If there has to be some background noise, it is generally 20 decibels lower than the foreground noise. That’s about four times quieter.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>Background noise is acceptable if:</p>\n<ul>\n <li>The audio isn't mainly speech (for example, in an audio play, an action scene might have a helicopter blown up by a car).</li>\n <li>The audio is part of a CAPTCHA element (CAPTCHA is a test that separates humans from spam bots and is often used in forms).</li>\n <li>The audio is you <q><a href=\"http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html\">singing or rapping</a>.</q></li>\n</ul>\n",
     "wuhcag_related": null
-},{
+  },
+  {
     "key": "1-4-8",
     "id": "visual-audio-contrast-visual-presentation",
     "title": "Visual Presentation",
@@ -498,12 +519,13 @@
     "wuhcag_what_to_do": "<p>The following five features are cumulative, as all must be in place to pass Guideline 1.4.8:</p>\n<ol>\n <li>Provide a tool that enables your customers to select from a number of background and foreground colours; and</li>\n <li>Text blocks must be no wider than 80 characters (make sure resized browser windows do not need horizontal scrolling); and</li>\n <li>Text is not justified to both sides of the webpage; and</li>\n <li>Provide a tool that enables your users to select from a number of line and paragraph spacing options – one of the options must give line spacing that is at least 1.5 in text blocks and spaces between paragraphs are at least 1.5x line spacing; and</li>\n <li>Text can be resized in a browser up to 200% without requiring the user to scroll horizontally (you may have fulfilled this when you complied with Guideline 1.4.4).</li>\n</ol>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-4-4",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-4-4",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "1-4-9",
     "id": "visual-audio-contrast-text-images",
     "title": "Images of Text (No Exception)",
@@ -516,24 +538,25 @@
     "wuhcag_what_to_do": "<ul>\n <li>Don't use an image of text when you can use plain text.</li>\n <li>Display quotes as text rather than images.</li>\n <li>Use <abbr title=\"Cascading Style Sheets\">CSS</abbr> to style headings.</li>\n <li>Use CSS to style navigation menus as text.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>Despite the title of Guideline 1.4.9, some exceptions allow you to use images of text on your website:</p>\n<ul>\n <li>Brand logos.</li>\n <li>If using an image of text is essential because you can't achieve the effect with text (for example, presenting a particular example of typography).</li>\n <li>If the text is purely decorative.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-4-3",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-4-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "1-4-6",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-4-3",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-4-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "1-4-6",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-1-1",
     "id": "keyboard-operation-keyboard-operable",
     "title": "Keyboard",
@@ -546,20 +569,21 @@
     "wuhcag_what_to_do": "<ul>\n\t<li>A clean <abbr title=\"HyperText Markup Language\">HTML</abbr> and <abbr title=\"Cascading Style Sheets\">CSS</abbr> website will often have keyboard accessibility without further work - a great example of why you need to invest in web design and development from the outset</li>\n</ul>\n<h2>Auditing keyboard accessibility</h2>\n<ul>\n\t<li>Unplug your mouse and make sure you can fully use your website with your keyboard</li>\n\t<li>Make sure no function on your website requires timed keystrokes - such as double tap enter/return within two seconds to submit</li>\n</ul>\n<h2>A few more things</h2>\n<p>At the lowest level of accessibility (which <strong>2.1.1 - Keyboard</strong> is), you can get away with functions that require a mouse pointer for input. These are things like free drawing tools and some types of game. Just think carefully about who you are excluding when you use these features.</p>\n<p>One thing that gets thrown out a lot by keyboard accessibility advocates is ‘Access keys’. You’re already familiar with access keys, which is why people are quick to accept them as useful. Access keys are keyboard shortcuts like ctrl +  p to print pr ctrl + s to save.</p>\n<p>Access keys work great in programs like Microsoft Word and Adobe Reader because they’re in a controlled environment. Out on the wild wild web, things aren’t so simple. Your customers access your website on a number of web browsers; some use Internet Explorer, some Firefox, some Google Chrome and so on... These web browsers have different levels of support for Access keys.</p>\n<p>Frustratingly, Access keys are a good idea for keyboard accessibility with bad implementation. If you’re a regular computer user, you probably use ctrl + p  much more often than selecting the menu with your mouse pointer. WebAIM has an <a href=\"http://webaim.org/techniques/keyboard/accesskey\">article about Access keys</a> if you want to know more. My advice: avoid them.</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-1-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-3",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "2-4-7",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "2-1-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-3",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "2-4-7",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-1-2",
     "id": "keyboard-operation-trapping",
     "title": "No Keyboard Trap",
@@ -572,12 +596,13 @@
     "wuhcag_what_to_do": "<ul>\n <li>Test your website to make sure you can navigate away from, as well as to, all parts of your website by keyboard only.</li>\n <li>Make sure all navigation is controllable by either the ‘Tab’ or arrow keys, which is a standard many people are familiar with.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-1-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "2-1-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "2-1-3",
     "id": "keyboard-operation-all-funcs",
     "title": "Keyboard (No Exception)",
@@ -590,16 +615,17 @@
     "wuhcag_what_to_do": "<p>A clean <abbr title=\"HyperText Markup Language\">HTML</abbr> and <abbr title=\"Cascading Style Sheets\">CSS</abbr> website will often have keyboard accessibility without further work. This is a great example of why you need to invest in web design and development from the outset.</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-1-2",
-            "conformance_level": "A"
-        }
+      {
+        "key": "2-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-1-2",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "2-2-1",
     "id": "time-limits-required-behaviors",
     "title": "Timing Adjustable",
@@ -612,24 +638,25 @@
     "wuhcag_what_to_do": "<ul>\n<li>If your website uses a time limit:\n <ul>\n  <li>Give your users an option to turn off the time limit before it begins (for example, a landing page before the time-controlled page can display a message that shows your customers what to do); or</li>\n  <li>Give your users the option to adjust the time limit before it begins, over a range of at least ten times the default setting (you can do this with a landing page too); or</li>\n  <li>Give your users the option to extend the period at least twenty seconds before it expires. This must be a simple action like clicking a button and must be available to use at least ten times.</li>\n </ul>\n</li>\n<li>If your website has moving or animated text, users must be able to pause the movement.</li>\n<li>If your website has a feature that updates automatically (for example, with the latest football scores), you must allow your users to delay the frequency of the updates by at least ten times the default setting.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>There are some valid exceptions to Guideline 2.2.1, because sometimes you must set time limits for your website or business to work.</p>\n<p>You do not need to provide the above controls if:</p>\n<ul>\n <li>The time limit is due to real-time events, like bidding in an auction.</li>\n <li>Your content is a live video stream.</li>\n <li>The time limit is essential for your business. For example, a ticket sales website that saves a reservation for ten minutes because demand is high and giving users unlimited time would undermine the business process.</li>\n <li>The time limit is more than 20 hours.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "2-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-2-3",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "2-2-4",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "2-2-5",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "2-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-2-3",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "2-2-4",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "2-2-5",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-2-2",
     "id": "time-limits-pause",
     "title": "Pause, Stop, Hide",
@@ -642,20 +669,21 @@
     "wuhcag_what_to_do": "<ul>\n <li>Moving, blinking or scrolling content must have an option to pause, stop or hide it; and</li>\n <li>Auto-updating content must have the same options; or</li>\n <li>An option to control frequency (see Guideline 2.2.1 for advice).</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>You can ignore the rules of moving content if:</p>\n<ul>\n <li>The moving content does not start automatically, without user interaction.</li>\n <li>Your moving, scrolling or blinking content lasts less than five seconds.</li>\n <li>The information is not parallel with content but separate (for example, a full-page advert displayed before users reach your webpage).</li>\n <li>The movement is an animation that runs to show your users that something is loading, if it would otherwise look like your website was frozen.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "2-2-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-3-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-3-2",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "2-2-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-3-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-3-2",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-2-3",
     "id": "time-limits-no-exceptions",
     "title": "No Timing",
@@ -668,16 +696,17 @@
     "wuhcag_what_to_do": "<p>This guideline builds on Guideline 2.2.1. That guideline (at the lower Level A standard of compliance) requires you to offer users a chance to turn off or extend time limits. At Level AAA, this guideline requires that you do not set time limits at all (with two exceptions below).</p>\n",
     "wuchcag_exceptions": "<p>You can set a time limit if:</p>\n<ul>\n <li>The time limit is due to real-time events, like bidding in an auction.</li>\n <li>Your content is a live video stream.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "2-2-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-2-5",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "2-2-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-2-5",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-2-4",
     "id": "time-limits-postponed",
     "title": "Interruptions",
@@ -690,12 +719,13 @@
     "wuhcag_what_to_do": "<ul>\n <li>Don't use an automatic redirect or refresh function based on a time delay (for example, if a webpage has moved, do not redirect users to the new page after a certain amount of time).</li>\n <li>Provide an option for turning off all but ‘essential’ interruptions (see below).</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>Warnings about a user’s health, safety or the security of their data or property as they are considered ‘essential’ (I’m not sure how a website would know if your house was about to explode, but let’s not ban it from trying to tell you!).</p>\n",
     "wuhcag_related": [
-        {
-            "key": "2-2-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "2-2-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "2-2-5",
     "id": "time-limits-server-timeout",
     "title": "Re-authenticating",
@@ -708,16 +738,17 @@
     "wuhcag_what_to_do": "<ul>\n <li>When you ask a user to re-authenticate their identity, the user can continue exactly as before with saved data (for example, their shopping basket contents, input into forms or accessibility options).</li>\n <li>Things like surveys and questionnaires can be saved and completed at a later date.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-2-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-2-3",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "2-2-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-2-3",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-3-1",
     "id": "seizure-does-not-violate",
     "title": "Three Flashes or Below Threshold",
@@ -730,16 +761,17 @@
     "wuhcag_what_to_do": "<p>Don't add anything to your website that flashes more than three times per second.</p>\n",
     "wuchcag_exceptions": "<p>There is a ridiculously complicated exception based on the user’s visual field. You should just avoid all flashing content, but here it is:</p>\n<blockquote>the combined area of flashes occurring concurrently occupies no more than a total of .006 steradians within any 10 degree visual field on the screen (25% of any 10 degree visual field on the screen) at typical viewing distance.<cite><a href=\"http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html\">Understanding WCAG 2.0</a></cite></blockquote>\n<p>If you can work out what that means, I dare you to use it.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "2-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-2-3",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "2-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-2-3",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-3-2",
     "id": "seizure-three-times",
     "title": "Three Flashes",
@@ -752,16 +784,17 @@
     "wuhcag_what_to_do": "<p>Don't add anything to your website that flashes more than three times a second.</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-3-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "2-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-3-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-1",
     "id": "navigation-mechanisms-skip",
     "title": "Bypass Blocks",
@@ -774,20 +807,21 @@
     "wuhcag_what_to_do": "<p>Add a ‘Skip to Content’ link to all pages on your website. It’s best if you make the link visible.</p>\n<p>The easiest way to add a ‘Skip to Content’ link to your website is to use of a great piece of code from the guys on the PayPal Accessibility Team. They produced something called <a href=\"https://github.com/paypal/skipto\">skipto</a>, which adds a link for you. Best of all if you’re using WordPress or Drupal, there are plugins you can use.</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-3-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "3-2-3",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-3-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "3-2-3",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-10",
     "id": "navigation-mechanisms-headings",
     "title": "Section Headings",
@@ -800,20 +834,21 @@
     "wuhcag_what_to_do": "<p>Add a heading for every new thought or topic in your content (for example, a travel article may have headings to indicate the distinct sections on dining, transportation, and lodging).</p>\n",
     "wuchcag_exceptions": "<p>A webpage can be single block of content with only one header if it is about one thought or topic.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-3-1",
-            "conformance_level": ""
-        },
-        {
-            "key": "1-3-2",
-            "conformance_level": ""
-        },
-        {
-            "key": "2-4-6",
-            "conformance_level": ""
-        }
+      {
+        "key": "1-3-1",
+        "conformance_level": ""
+      },
+      {
+        "key": "1-3-2",
+        "conformance_level": ""
+      },
+      {
+        "key": "2-4-6",
+        "conformance_level": ""
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-2",
     "id": "navigation-mechanisms-title",
     "title": "Page Titled",
@@ -826,24 +861,25 @@
     "wuhcag_what_to_do": "<p>Give each page on your website a unique and descriptive title.</p>\n<p>Many websites use a Content Management System (CMS) that controls page titles. Don't worry – this isn't as scary as it sounds. You’ve probably already got one, such as the free and popular WordPress. A good CMS will allow you to set individual page titles with no need to touch any code.</p>\n<p>A useful format for writing page titles is: ‘Page name – Page description – Website name’</p>\n<p>For example: ‘About Us – Learn our Secrets – ACME Corp’</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-3-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-3-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "2-4-8",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-3-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-3-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "2-4-8",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-3",
     "id": "navigation-mechanisms-focus-order",
     "title": "Focus Order",
@@ -856,20 +892,21 @@
     "wuhcag_what_to_do": "<ul>\n <li>A well-made HTML website will often comply with this guideline.</li>\n <li>Unplug your mouse and verify that you can use the ‘Tab’ key to navigate to every part of your website and use every function, including search boxes and forms – make sure each page has a sensible focus order.</li>\n</ul>\n",
     "wuchcag_exceptions": "<ul>\n <li>Complex items like tree diagrams do not have to be exactly programmed to a specific order, as long as your users can reach every element.</li>\n <li>You don't need to set a focus order if your page doesn't need to be navigated in a particular sequence to be understood. For example, a random collage of links or images.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-3-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-7",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-3-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-7",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-4",
     "id": "navigation-mechanisms-refs",
     "title": "Link Purpose (In Context)",
@@ -882,16 +919,17 @@
     "wuhcag_what_to_do": "<p>To comply with this guideline, make sure that for each link on your website:</p>\n<ul>\n <li>The purpose of the link is clear from the link text (for example, ‘My blog’); or</li>\n <li>The purpose of the link is clear from the surrounding content, meaning the same sentence, paragraph or cell in a table (for example, ‘Visit my blog’ ); or</li>\n <li>If the link is an image, the alt text of the image makes the link purpose clear (for example, ‘Luke McGrath – Visit my blog’); and</li>\n <li>Links with the same destination have the same description (but links don’t share a description if they point to different places).</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>You don't need to make the link purpose clear if the purpose is ambiguous to all of your users. For example, if I link the word ‘blog’ in the phrase ‘I have a personal blog’ the link might go to my blog, or it might go to a Wikipedia page explaining what a blog is. No user would reliably know where the link goes before they follow the link.</p>\n<p>Of course, it’s best to avoid ambiguous links as users should always know where they are going. Although, there are times when you might want to spring a fun surprise on everyone.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-4-9",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-4-9",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-5",
     "id": "navigation-mechanisms-mult-loc",
     "title": "Multiple Ways",
@@ -904,20 +942,21 @@
     "wuhcag_what_to_do": "<p>Provide multiple ways for users to find your website’s pages by:</p>\n<ul>\n <li>Adding an <abbr title=\"HyperText Markup Language\">HTML</abbr> sitemap page (which links to every page on your website) and link to it after the ‘Skip to Content’ link from Guideline 2.4.1; and</li>\n <li>Including a search function on every page (by adding it to the header); and</li>\n <li>Providing a clear and consistent main navigation menu.</li>\n</ul>\n",
     "wuchcag_exceptions": "<ul>\n <li>You don't need to provide multiple ways to access pages that users only reach after a certain process (for example, a receipt or confirmation page).</li>\n <li>If your website only has a handful of pages, one clear navigation menu may suffice.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "1-4-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-8",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-4-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-8",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-6",
     "id": "navigation-mechanisms-descriptive",
     "title": "Headings and Labels",
@@ -930,16 +969,17 @@
     "wuhcag_what_to_do": "<ul>\n <li>Use informative headings and subheadings where appropriate (a change in topic or purpose) to aid navigation through your content.</li>\n <li>Label all elements (for example, sidebar widgets, forms, search boxes, tables).</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-3-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-3-2",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-3-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-3-2",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-7",
     "id": "navigation-mechanisms-focus-visible",
     "title": "Focus Visible",
@@ -952,16 +992,17 @@
     "wuhcag_what_to_do": "<ul>\n <li>Make the keyboard focus visible on all elements (menu items, form fields, links, etc…).</li>\n <li>Use <abbr title=\"Cascading Style Sheets\">CSS</abbr> to apply a visual aid to keyboard focus – a border and/or underline is best.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-3",
-            "conformance_level": "A"
-        }
+      {
+        "key": "2-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-3",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-8",
     "id": "navigation-mechanisms-location",
     "title": "Location",
@@ -974,16 +1015,17 @@
     "wuhcag_what_to_do": "<ul>\n <li>Use breadcrumbs to help with navigation. Show the sequence a user is following and where they are in that sequence. For example: You are here: Home > Fish > Bass; and</li>\n <li>Add a sitemap page to your website (see Guideline 2.4.5) so your users have another way of finding what they want. Add a link to the sitemap somewhere prominent like the header.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-4-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-5",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "2-4-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-5",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "2-4-9",
     "id": "navigation-mechanisms-link",
     "title": "Link Purpose (Link Only)",
@@ -996,20 +1038,21 @@
     "wuhcag_what_to_do": "<p>To comply with this guideline, make sure that for each link on your website:</p>\n<ul>\n <li>The purpose of the link is clear from the link text; or</li>\n <li>If the link is an image, the alt text of the image makes the link purpose clear.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>You don't need to make the link purpose clear if the purpose is ambiguous to all of your users. For example, if I link the word ‘blog’ in the phrase ‘I have a personal blog’ the link might go to my blog, or it might go to a Wikipedia page explaining what a blog is. No user would reliably know where the link goes before they follow the link.</p>\n<p>Of course, it’s best to avoid ambiguous links as users should always know where they are going. Although, there are times when you might want to spring a fun surprise on everyone.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-4",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "3-2-4",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-4",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "3-2-4",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-1-1",
     "id": "meaning-doc-lang-id",
     "title": "Language of Page",
@@ -1022,12 +1065,13 @@
     "wuhcag_what_to_do": "<p>Ensure that each page of your website has a language assigned to it.</p>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "3-1-3",
-            "conformance_level": ""
-        }
+      {
+        "key": "3-1-3",
+        "conformance_level": ""
+      }
     ]
-},{
+  },
+  {
     "key": "3-1-2",
     "id": "meaning-other-lang-id",
     "title": "Language of Parts",
@@ -1040,12 +1084,13 @@
     "wuhcag_what_to_do": "<ul>\n <li>Set your website's main language by meta tag (see Guideline 3.1.1).</li>\n <li>Add a language attribute to content that is not in the main language.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>If you are using a single word that has become part of the main language (for example, ‘rendezvous’ is used in English but is of French origin).</p>\n",
     "wuhcag_related": [
-        {
-            "key": "3-1-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "3-1-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "3-1-3",
     "id": "meaning-idioms",
     "title": "Unusual Words",
@@ -1058,20 +1103,21 @@
     "wuhcag_what_to_do": "<ul>\n <li>Avoid using unusual words and phrases.</li>\n <li>If you need to use an unusual word or phrase, you can explain the meaning to your users by:</li>\n <li>Showing the meaning in the text (for example, ‘I like bass. A bass is a fish.’); or</li>\n <li>Showing the meaning in brackets (for example, ‘I like bass (a type of fish)’; or</li>\n <li>Linking the word to a definition on a glossary page on your website; or</li>\n <li>Linking the word to a definition footnote on the same page.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "3-1-4",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-1-5",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-1-6",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "3-1-4",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-1-5",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-1-6",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-1-4",
     "id": "meaning-located",
     "title": "Abbreviations",
@@ -1084,20 +1130,21 @@
     "wuhcag_what_to_do": "<ul>\n <li>Avoid using abbreviations, acronyms and initialisms.</li>\n <li>If you need to use an abbreviation, you can explain the meaning to your users by:</li>\n <li>Showing the meaning in the text (for example, Federal Bureau of Investigation (FBI)); or</li>\n <li>Linking the abbreviation to a definition on a glossary page on your website; or</li>\n <li>Linking the abbreviation to a definition footnote on the same page; or</li>\n <li>Using the abbreviation <abbr title=\"HyperText Markup Language\">HTML</abbr> tag to expand the abbreviation.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>You don’t need to explain an abbreviation, acronym or initialism if it’s part of the language (for example, ‘laser’ or ‘CD’).</p>\n",
     "wuhcag_related": [
-        {
-            "key": "3-1-3",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-1-5",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-1-6",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "3-1-3",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-1-5",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-1-6",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-1-5",
     "id": "meaning-located",
     "title": "Abbreviations",
@@ -1110,20 +1157,21 @@
     "wuhcag_what_to_do": "<p>The <abbr title=\"World Wide Web Consortium\">W3C</abbr> (the writers of the Guidelines), set a benchmark you can test against. The suggested standard is to write so that a person with 7-9 years of schooling can understand you.</p>\n<p>You can get your content to this standard by:</p>\n<ul>\n <li>Writing so that someone with no more than nine years of school can understand you (that’s nine years from their first day at school, so no college or further education).</li>\n <li>Adding summaries, images and diagrams to content to help explain meaning.</li>\n <li>Breaking up content with well-organised sections and headings.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>You don't need to worry about using correct names, even if they are complicated or hard to read. Names of things like people, films, books and companies all might be hard to read, but they are beyond your control.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "3-1-3",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-1-4",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-1-6",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "3-1-3",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-1-4",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-1-6",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-1-6",
     "id": "meaning-pronunciation",
     "title": "Pronunciation",
@@ -1136,16 +1184,17 @@
     "wuhcag_what_to_do": "<ul>\n <li>Avoid using hard-to-pronounce words. </li>\n <li>If you need to use a hard-to-pronounce word, you can explain the meaning to your users by:</li>\n <li>Providing the phonetic pronunciation of words immediately after the word; or</li>\n <li>Linking the word to a pronunciation guide on another page on your website; or</li>\n <li>Linking the word to a pronunciation guide on the same page.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>You don't need to provide pronunciation help if:</p>\n<ul>\n <li>The correct pronunciation is not clear from context, so all users would struggle with it.</li>\n <li>The correct pronunciation is just as likely to be unknown to all users (for example, Latin phrases or scientific words).</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "3-1-3",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-1-4",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "3-1-3",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-1-4",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-2-1",
     "id": "consistent-behavior-receive-focus",
     "title": "On Focus",
@@ -1158,12 +1207,13 @@
     "wuhcag_what_to_do": "<ul>\n <li>Ensure no element changes purely by receiving focus.</li>\n <li>Avoid both behavioural and visual modifications.</li>\n</ul>\n<p>Ensure that:</p>\n<ul>\n<li>Links don't open automatically on focus; and</li>\n<li>Forms don't submit without the user taking action (such as clicking the ‘Submit’ button); and</li>\n<li>There are no automatic pop-ups; and</li>\n<li>Focus never jumps to another element automatically; and</li>\n<li>No other action that occurs on focus alone causes the page to change.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>Elements can change on focus if the context doesn’t change. For example, you can use a dynamic menu on your website, the kind where navigation options drop down when you hover over an item. This is not a change of context.</p>\n<p>Another example would be a hover status on a link, again, this this isn’t a change of context.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "2-2-2",
-            "conformance_level": "A"
-        }
+      {
+        "key": "2-2-2",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "3-2-2",
     "id": "consistent-behavior-unpredictable-change",
     "title": "On Input",
@@ -1176,16 +1226,17 @@
     "wuhcag_what_to_do": "<p>Here are some examples of the kinds of things to look out for:</p>\n<ul>\n <li>Forms must not auto-submit when all fields are filled – this prevents your users from checking and editing what they have written.</li>\n <li>Focus (the field where the user will input next) must not automatically jump to the next field in a form once a field is complete.</li>\n <li>Using a control (like selecting yes or no) must not automatically perform the action (for example, selecting to subscribe to a newsletter in a check box must not automatically subscribe your user, they should be able to click a submit button to confirm their decision).</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>Elements can change on input if you inform the user of the change before they have the chance to input their data or make their selection. For example, you may have seen websites with options in the header to choose a text size. Once you click on the size you want, the website changes without giving you the chance to confirm your choice.</p>\n<p>Controls like that don't need to have a submit button, as long as it’s clear from the text before the element what will happen when you input.</p>\n",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "3-2-5",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "3-2-5",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-2-3",
     "id": "consistent-behavior-consistent-locations",
     "title": "Consistent Navigation",
@@ -1198,24 +1249,25 @@
     "wuhcag_what_to_do": "<ul>\n <li>Keep navigation menus in the same location on all pages; and</li>\n <li>Present the options in navigation menus in the same order on all pages; and</li>\n <li>Keep all other standard elements (for example, your search box) in the same location on all pages.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-4-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-5",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "3-2-4",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "2-4-8",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "2-4-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-5",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "3-2-4",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "2-4-8",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-2-4",
     "id": "consistent-behavior-consistent-functionality",
     "title": "Consistent Identification",
@@ -1228,28 +1280,29 @@
     "wuhcag_what_to_do": "<p>Ensure that:</p>\n<ul>\n <li>Any icons used are consistent (for example, ‘Print page’ or Twitter link); and</li>\n <li>Elements with the same function are labelled and named consistently; or</li>\n <li>Elements with the same function have a consistent text alternative.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-4",
-            "conformance_level": "A"
-        },
-        {
-            "key": "2-4-9",
-            "conformance_level": "AAA"
-        },
-        {
-            "key": "3-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "4-1-2",
-            "conformance_level": "A"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-4",
+        "conformance_level": "A"
+      },
+      {
+        "key": "2-4-9",
+        "conformance_level": "AAA"
+      },
+      {
+        "key": "3-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "4-1-2",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "3-2-5",
     "id": "consistent-behavior-no-extreme-changes-context",
     "title": "Change on Request",
@@ -1262,16 +1315,17 @@
     "wuhcag_what_to_do": "<p>To pass this guideline, you need to ensure the following five statements are true:</p>\n<ol>\n <li>If you have an element that updates automatically (like a live news ticker), there is an option to pause this and update only when requested; and</li>\n <li>All links open in the same window, unless it’s essential (for example, opening a transcript to a video); and</li>\n <li>If a link does open in a new window, the user is aware of this (for example, in the anchor text of the link or by an icon); and</li>\n <li>Forms do not auto-submit when fields are filled; and</li>\n <li>Any redirect from one page to another is immediate.</li>\n</ol>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "2-2-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "3-3-5",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "2-2-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "3-3-5",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-3-1",
     "id": "minimize-error-identified",
     "title": "Error Identification",
@@ -1284,28 +1338,29 @@
     "wuhcag_what_to_do": "<ul>\n <li>Identify and explain to the user any mistakes that you can detect automatically.</li>\n <li>Add error explanation close to the error, showing what is wrong and how to fix it.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-3-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-4-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "3-3-2",
-            "conformance_level": "A"
-        },
-        {
-            "key": "3-3-3",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "3-3-4",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "1-3-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-4-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "3-3-2",
+        "conformance_level": "A"
+      },
+      {
+        "key": "3-3-3",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "3-3-4",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-3-2",
     "id": "minimize-error-cues",
     "title": "Labels or Instructions",
@@ -1318,20 +1373,21 @@
     "wuhcag_what_to_do": "<ul>\n <li>Label all input fields clearly and helpfully.</li>\n <li>Where a field needs a specific format, give an example (For example, for a ‘date’ field in a form you might use ‘Enter the date as dd/mm/yyyy’)</li>\n <li>Mark required fields with an icon and explain what the icon means before the form.</li>\n <li>Keep your labels simple – too much explanation can be counter-productive. Things like ‘First name’, ‘Email’ and ‘Your message’ are fine.</li>\n <li>The same goes for instructions, ‘Required fields are in red and have a * symbol’ works great. So does ‘Fill in this form and click ‘Submit’ to get in touch’.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-3-3",
-            "conformance_level": "A"
-        },
-        {
-            "key": "1-4-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "3-3-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "1-3-3",
+        "conformance_level": "A"
+      },
+      {
+        "key": "1-4-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "3-3-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "3-3-3",
     "id": "minimize-error-suggestions",
     "title": "Error Suggestion",
@@ -1344,12 +1400,13 @@
     "wuhcag_what_to_do": "<p>To pass this guideline, you need to make sure that:</p>\n<ul>\n <li>Your forms identify input errors.</li>\n <li>When the error is missing a required field, communicate this to the user with a text suggestion.</li>\n <li>If the error is in the format of the input, the suggestion shows the correct format (for example, ‘The date must be in the form DD/MM/YYYY’).</li>\n <li>If the error is because the input needed to be from a limited list of values, provide these values and explain them.</li>\n</ul>\n",
     "wuchcag_exceptions": "<p>You don't need to provide suggestions if:</p>\n<ul>\n <li>Making a suggestion would negatively impact data security.</li>\n <li>Making a suggestion goes against the purpose of the field.</li>\n</ul>\n",
     "wuhcag_related": [
-        {
-            "key": "3-3-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "3-3-1",
+        "conformance_level": "A"
+      }
     ]
-},{
+  },
+  {
     "key": "3-3-4",
     "id": "minimize-error-reversible",
     "title": "Error Prevention (Legal, Financial, Data)",
@@ -1362,20 +1419,21 @@
     "wuhcag_what_to_do": "<p>To pass this guideline, you need to make sure that:</p>\n<ul>\n <li>Legal commitments, financial transactions, test responses and changes to user controlled data are reversible; or</li>\n <li>Legal commitments, financial transactions, test responses and changes to user controlled data are checked for input errors and the user is given a chance to correct any mistakes; or</li>\n <li>Add a confirmation page to the data input submission process that summarises the input and the outcome, with an option to correct or discontinue. This page has an input field (for example, a confirm button or checkbox) that acts as confirmation of the submission.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "3-3-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "3-3-3",
-            "conformance_level": "AA"
-        },
-        {
-            "key": "3-3-6",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "3-3-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "3-3-3",
+        "conformance_level": "AA"
+      },
+      {
+        "key": "3-3-6",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-3-5",
     "id": "minimize-error-context-help",
     "title": "Help",
@@ -1388,12 +1446,13 @@
     "wuhcag_what_to_do": "<p>Offer help on your forms by:</p>\n<ul>\n <li>Labelling input buttons with the nature of the input (for example, ‘Subscribe’ or ‘Buy’); and</li>\n <li>Where an input field needs more information than a label provides, add a link to that information near the field (for example ‘Help with this answer’); and</li>\n <li>Where a field needs a specific format, use a label, adjacent text or placeholder text showing the correct format (for example, ‘Date: DD/MM/YYYY’).</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "3-2-5",
-            "conformance_level": "AAA"
-        }
+      {
+        "key": "3-2-5",
+        "conformance_level": "AAA"
+      }
     ]
-},{
+  },
+  {
     "key": "3-3-6",
     "id": "minimize-error-reversible-all",
     "title": "Error Prevention (All)",
@@ -1406,12 +1465,13 @@
     "wuhcag_what_to_do": "<p>To pass this guideline, you need to make sure that:</p>\n<ul>\n <li>All data input submissions are reversible; or</li>\n <li>All data input submissions are checked for input errors and the user is given a chance to correct any mistakes; or</li>\n <li>Add a confirmation page to the data input submission process that summarises the input and the outcome, with an option to correct or discontinue. This page has an input field (for example, a confirm button or checkbox) that acts as confirmation of the submission.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "3-3-4",
-            "conformance_level": "AA"
-        }
+      {
+        "key": "3-3-4",
+        "conformance_level": "AA"
+      }
     ]
-},{
+  },
+  {
     "key": "4-1-1",
     "id": "ensure-compat-parses",
     "title": "Parsing",
@@ -1424,7 +1484,8 @@
     "wuhcag_what_to_do": "<p>This is a wide-ranging guideline, one that changes with time as standards evolve. Your best protection is hiring a web designer who knows parsing well. Find one through recommendations and ask them about their approach to web standards and accessibility.</p>\n<p>Here are the most common issues to watch out for:</p>\n<ul>\n <li>Ensure HTML elements have complete start ( &lt; > ) and end ( &lt;/ > ) tags where needed.</li>\n <li>Nest all HTML elements correctly (for example, list objects within an ordered or unordered list).</li>\n <li>Use unique Ids.</li>\n <li>Check that HTML elements don’t contain duplicate attributes.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": null
-},{
+  },
+  {
     "key": "4-1-2",
     "id": "ensure-compat-rsv",
     "title": "Name, Role, Value",
@@ -1437,13 +1498,15 @@
     "wuhcag_what_to_do": "<ul>\n <li>Use HTML specifications for any script you author for your website.</li>\n <li>If you use a plugin or other element authored by a third party, make sure it uses valid HTML markup.</li>\n</ul>\n",
     "wuchcag_exceptions": "",
     "wuhcag_related": [
-        {
-            "key": "1-1-1",
-            "conformance_level": "A"
-        },
-        {
-            "key": "4-1-1",
-            "conformance_level": "A"
-        }
+      {
+        "key": "1-1-1",
+        "conformance_level": "A"
+      },
+      {
+        "key": "4-1-1",
+        "conformance_level": "A"
+      }
     ]
-}]
+  }
+
+]

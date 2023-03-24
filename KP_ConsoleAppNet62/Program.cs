@@ -13,7 +13,7 @@ internal partial class Program
     static void Main(string[] args)
     {
 
-        JsonOperations.Read();
+        JsonOperations.ReadNewFile();
         Console.ReadLine();
         return;
 
