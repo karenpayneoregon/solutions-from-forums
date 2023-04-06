@@ -1,9 +1,5 @@
 ﻿using SpreadsheetLight;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+#pragma warning disable CS8619
 
 namespace SpreadSheetLight1.Classes;
 internal class ExcelOperations
@@ -12,19 +8,17 @@ internal class ExcelOperations
     {
         try
         {
-            using (var document = new SLDocument(fileName, "Sheet1"))
+            using var document = new SLDocument(fileName, "Sheet1");
+            for (int index = 0; index < list.Count; index++)
             {
-                for (int index = 0; index < list.Count; index++)
-                {
-                    document.SetCellValue(SLConvert.ToCellReference(row, column), list[index]);
+                document.SetCellValue(SLConvert.ToCellReference(row, column), list[index]);
 
-                    row++;
-                }
-
-                document.Save();
-
-                return (true, null);
+                row++;
             }
+
+            document.Save();
+
+            return (true, null);
         }
         catch (Exception exception)
         {
