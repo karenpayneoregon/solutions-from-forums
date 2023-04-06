@@ -12,3 +12,19 @@ internal partial class Program
         WindowUtility.SetConsoleWindowPosition(WindowUtility.AnchorWindow.Center);
     }
 }
+
+public interface ISystemClock
+{
+    DateTime Now { get; }
+}
+public class FixedDateClock : ISystemClock
+{
+    private readonly DateTime _when;
+
+    public FixedDateClock(DateTime when)
+    {
+        _when = when;
+    }
+
+    public DateTime Now => _when;
+}

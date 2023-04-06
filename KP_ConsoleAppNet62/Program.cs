@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Drawing;
+using System.Text.Json;
 using KP_ConsoleAppNet62.Classes;
 using KP_ConsoleAppNet62.Data;
 using KP_ConsoleAppNet62.Models;
@@ -13,7 +14,11 @@ internal partial class Program
     static void Main(string[] args)
     {
 
-        JsonOperations.ReadNewFile();
+        var when = new DateTime(2021, 01, 01);
+        var clock = new FixedDateClock(when);
+        Console.WriteLine(clock.Now);
+
+        //JsonOperations.ReadNewFile();
         Console.ReadLine();
         return;
 

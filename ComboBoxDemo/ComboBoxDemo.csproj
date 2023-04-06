@@ -15,7 +15,9 @@
 	<ItemGroup>
 	  <Content Include="readme.md" />
 	</ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.0" />
+	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="3.3.4">
 	    <PrivateAssets>all</PrivateAssets>

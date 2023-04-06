@@ -8,8 +8,7 @@ public class Container
     [Key]
     public int Identifier { get; set; }
 
-    [JsonPropertyName("key")]
-    public string Key { get; set; }
+    public string Section { get; set; }
 
     [JsonPropertyName("id")]
     public string Id { get; set; }
@@ -37,6 +36,7 @@ public class Container
 
     [JsonPropertyName("wuhcag_what_to_do")]
     public string Remedy { get; set; }
+
     [JsonPropertyName("wuhcag_exceptions")]
     public string Exceptions { get; set; }
 
@@ -46,6 +46,6 @@ public class Container
 
     public List<Related> RelatedList { get; set; } = new();
 
-    public override string ToString() => $"{Key,-10}{ConformanceLevel}";
+    public override string ToString() => $"{Section,-10}{ConformanceLevel}";
 
 }

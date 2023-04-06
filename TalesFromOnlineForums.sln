@@ -39,6 +39,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewtonsoftDateOnlyTimeOnlyA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComboBoxDemo", "ComboBoxDemo\ComboBoxDemo.csproj", "{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Excel", "Excel", "{D7EDD329-EB0A-4958-9A09-51A25674A967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadSheetLight1", "SpreadSheetLight1\SpreadSheetLight1.csproj", "{578EDD18-3021-48C4-9522-D30AA2C7F0F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,10 @@ Global
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{578EDD18-3021-48C4-9522-D30AA2C7F0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{578EDD18-3021-48C4-9522-D30AA2C7F0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{578EDD18-3021-48C4-9522-D30AA2C7F0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{578EDD18-3021-48C4-9522-D30AA2C7F0F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +108,7 @@ Global
 		{4FF68027-EDCF-4EAC-83B2-AF6C21C95AB1} = {EDBFA07E-C980-4B74-A006-8A695FE574C8}
 		{89F7F1A9-050D-46EE-9052-8922A621F88B} = {C3BF1854-C527-4889-9DB0-6DA6CA4C1431}
 		{E528239C-77FA-4F96-BEF8-F7A9418CC8B5} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
+		{578EDD18-3021-48C4-9522-D30AA2C7F0F5} = {D7EDD329-EB0A-4958-9A09-51A25674A967}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7591A428-3162-447A-841E-2476901C3B3A}

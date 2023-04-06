@@ -47,7 +47,7 @@ internal class JsonOperations
 
                         container.RelatedList.Add(new Related()
                         {
-                            Key = item[0].Substring(item[0].IndexOf(':') + 1),
+                            Section = item[0].Substring(item[0].IndexOf(':') + 1),
                             ConformanceLevel = item[1].Substring(item[1].IndexOf(':') + 1)
                         });
                     }

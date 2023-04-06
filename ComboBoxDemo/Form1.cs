@@ -42,7 +42,7 @@ public partial class Form1 : Form
 
         foreach (var value in values)
         {
-            Debug.WriteLine($"{value,-10}{Helpers.NextValue(value)}");
+            Debug.WriteLine($"{value,-10}{Helpers.Increment(value)}");
         }
     }
 
@@ -112,7 +112,7 @@ public class TimeItemNew
     public TimeSpan Time { get; set; }
     public override string ToString() => $"TimeFrame ({Time:hh})";
 }
-public class Helpers
+public class Helpers1
 {
     public static string NextValue(string sender)
     {
