@@ -1,6 +1,6 @@
 ﻿# About
 
-An example for using SpreadSheetLight with .NET Core.
+An example for using SpreadSheetLight with .NET Core which opens an existing Excel .xlsx file and writes to a single column then saves the file.
 
 ## Requires
 
