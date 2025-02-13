@@ -17,19 +17,25 @@ namespace NotesRazorApp
 
             builder.Host.UseSerilog((ctx, lc) => lc
                 .Filter.ByExcluding(logEvent =>
-                    logEvent.Properties.TryGetValue("SourceContext", out var sourceContext) &&
-                    !sourceContext.ToString().Contains("System.Net.Http.HttpClient") &&
-                    !sourceContext.ToString().Contains("Request starting HTTP/2 GET https://localhost") &&
-                    !sourceContext.ToString().Contains("_framework/aspnetcore-browser-refresh.js") &&
-                    !sourceContext.ToString().Contains("browserLink") &&
-                    logEvent.Level == Serilog.Events.LogEventLevel.Information)
-               .WriteTo.Console(theme: SeriLogCustomThemes.Theme1())
-               .WriteTo.File(
-                   Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
-                       "LogFiles",
-                       $"{Now.Year}-{Now.Month}-{Now.Day}", "Log.txt"),
-                   rollingInterval: RollingInterval.Infinite,
-                   outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}"));
+                {
+                    if (logEvent.Level != Serilog.Events.LogEventLevel.Information)
+                        return false;
+
+                    if (!logEvent.Properties.TryGetValue("SourceContext", out var sourceContext))
+                        return false;
+
+                    var sourceContextStr = sourceContext.ToString();
+                    return !sourceContextStr.Contains("System.Net.Http.HttpClient") &&
+                           !sourceContextStr.Contains("Request starting HTTP/2 GET https://localhost") &&
+                           !sourceContextStr.Contains("_framework/aspnetcore-browser-refresh.js") &&
+                           !sourceContextStr.Contains("browserLink");
+                })
+                .WriteTo.Console(theme: SeriLogCustomThemes.Theme1())
+                .WriteTo.File(
+                    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LogFiles", $"{Now:yyyy-MM-dd}", "Log.txt"),
+                    rollingInterval: RollingInterval.Infinite,
+                    outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}"));
+
 
 
 
