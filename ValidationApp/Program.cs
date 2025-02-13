@@ -15,7 +15,7 @@ internal partial class Program
 
     private static void ValidateEmployee()
     {
-        Employee employee = new Employee()
+        Employee employee = new()
         {
             UserName = "111111",
             Password = "my@Password1",

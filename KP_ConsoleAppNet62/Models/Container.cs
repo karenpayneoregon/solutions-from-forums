@@ -1,5 +1,6 @@
-﻿namespace KP_ConsoleAppNet62.Models;
-
+﻿// ReSharper disable InconsistentNaming
+namespace KP_ConsoleAppNet62.Models;
+#nullable disable
 public class Container
 {
     public string context { get; set; }

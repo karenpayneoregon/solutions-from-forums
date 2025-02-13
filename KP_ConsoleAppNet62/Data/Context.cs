@@ -18,6 +18,7 @@ public partial class Context : DbContext
 
     public virtual DbSet<Person> Person { get; set; }
 
+    // yes its bad to store a connection string here.
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog=ForumExample;Integrated Security=True;Encrypt=False");
 
