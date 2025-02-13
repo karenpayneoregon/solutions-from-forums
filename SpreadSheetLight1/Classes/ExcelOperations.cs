@@ -1,4 +1,5 @@
 ﻿using SpreadsheetLight;
+// ReSharper disable ForCanBeConvertedToForeach
 #pragma warning disable CS8619
 
 namespace SpreadSheetLight1.Classes;

@@ -1,6 +1,8 @@
 using ConfigurationLibrary.Classes;
 using Microsoft.EntityFrameworkCore;
 using NotesRazorApp.Data;
+using Serilog;
+using static System.DateTime;
 
 namespace NotesRazorApp
 {
@@ -11,6 +13,18 @@ namespace NotesRazorApp
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddRazorPages();
+
+            builder.Host.UseSerilog((ctx, lc) => lc
+                .WriteTo.Console()
+                .WriteTo.File(
+                    Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
+                        "LogFiles",
+                        $"{Now.Year}-{Now.Month}-{Now.Day}", "Log.txt"),
+                    rollingInterval: RollingInterval.Infinite,
+                    outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}"));
+
+
+
             builder.Services.AddDbContextPool<Context>(options =>
                 options.UseSqlServer(ConfigurationHelper.ConnectionString())
                     .EnableSensitiveDataLogging());

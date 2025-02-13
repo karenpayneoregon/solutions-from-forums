@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Serilog;
 
 namespace NotesRazorApp.Pages;
 
@@ -22,7 +23,7 @@ public class RadioButtonsPageModel : PageModel
     {
         await Task.Delay(0);
         var selection = Gender;
-
+        Log.Information($"Selected: {Gender}");
         return Page();
     }
 }
