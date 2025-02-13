@@ -24,11 +24,11 @@ namespace NotesRazorApp
                     if (!logEvent.Properties.TryGetValue("SourceContext", out var sourceContext))
                         return false;
 
-                    var sourceContextStr = sourceContext.ToString();
-                    return !sourceContextStr.Contains("System.Net.Http.HttpClient") &&
-                           !sourceContextStr.Contains("Request starting HTTP/2 GET https://localhost") &&
-                           !sourceContextStr.Contains("_framework/aspnetcore-browser-refresh.js") &&
-                           !sourceContextStr.Contains("browserLink");
+                    var sc = sourceContext.ToString();
+                    return !sc.Contains("System.Net.Http.HttpClient") &&
+                           !sc.Contains("Request starting HTTP/2 GET https://localhost") &&
+                           !sc.Contains("_framework/aspnetcore-browser-refresh.js") &&
+                           !sc.Contains("browserLink");
                 })
                 .WriteTo.Console(theme: SeriLogCustomThemes.Theme1())
                 .WriteTo.File(
