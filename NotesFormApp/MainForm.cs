@@ -17,6 +17,7 @@ namespace NotesFormApp
 
             NotesDataGridView.AutoGenerateColumns = false;
             BogusOperations.SimpleText();
+
         }
 
         private async void CreatePopulateButton_Click(object sender, EventArgs e)
