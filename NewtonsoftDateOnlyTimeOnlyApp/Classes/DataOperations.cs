@@ -18,7 +18,8 @@ internal class DataOperations
             "SELECT VL.VisitOn, VL.EnteredTime, VL.ExitedTime FROM Visitor AS V " + 
             "INNER JOIN VisitorLog AS VL ON V.VisitorIdentifier = VL.VisitorIdentifier WHERE (V.VisitorIdentifier = 1);";
 
-        await using var cn = new SqlConnection(ConfigurationHelper.ConnectionString());
+        
+        await using var cn = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=TimeOnlyDatabase;Integrated Security=True;Encrypt=False");
         await using var cmd = new SqlCommand { Connection = cn, CommandText = statement };
 
         await cn.OpenAsync();
