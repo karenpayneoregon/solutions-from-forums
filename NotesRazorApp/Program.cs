@@ -25,8 +25,7 @@ namespace NotesRazorApp
                         return false;
 
                     var sc = sourceContext.ToString();
-                    return !sc.Contains("System.Net.Http.HttpClient") &&
-                           !sc.Contains("Request starting HTTP/2 GET https://localhost") &&
+                    return !sc.Contains("Request starting HTTP/2 GET https://localhost") &&
                            !sc.Contains("_framework/aspnetcore-browser-refresh.js") &&
                            !sc.Contains("browserLink");
                 })
@@ -36,9 +35,7 @@ namespace NotesRazorApp
                     rollingInterval: RollingInterval.Infinite,
                     outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}"));
 
-
-
-
+            
             builder.Services.AddDbContextPool<Context>(options =>
                 options.UseSqlServer(ConfigurationHelper.ConnectionString())
                     .EnableSensitiveDataLogging());
