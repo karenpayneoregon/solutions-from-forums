@@ -1,5 +1,5 @@
 ﻿namespace SqlServerLibrary.Models;
-
+#nullable disable
 public class DateTimeInformation
 {
     public string TableName { get; set; }
