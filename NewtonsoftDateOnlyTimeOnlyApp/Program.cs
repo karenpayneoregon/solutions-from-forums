@@ -10,7 +10,7 @@ namespace NewtonsoftDateOnlyTimeOnlyApp
         {
             AnsiConsole.MarkupLine("[white]Working with [/][cyan]DateOnly[/] [white]and[/] [cyan]TimeOnly[/] [white]using[/] [cyan]Newtonsoft.Json[/]");
             Console.WriteLine();
-            await DataOperations.Read();
+            await DataOperations.ReadUsingDapper();
             LineBreak();
             Sample1();
             LineBreak();
