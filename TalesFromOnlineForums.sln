@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicButtonsApp", "DynamicButtonsApp\DynamicButtonsApp.csproj", "{57B4FEE4-F2E8-4CF2-8E01-9A1053C7F68C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console project core 9", "Console project core 9", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP_GetDateTimeInformation", "KP_GetDateTimeInformation\KP_GetDateTimeInformation.csproj", "{6FA94511-549F-4A48-AAF0-4D8FA457C377}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,10 @@ Global
 		{57B4FEE4-F2E8-4CF2-8E01-9A1053C7F68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B4FEE4-F2E8-4CF2-8E01-9A1053C7F68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B4FEE4-F2E8-4CF2-8E01-9A1053C7F68C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA94511-549F-4A48-AAF0-4D8FA457C377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA94511-549F-4A48-AAF0-4D8FA457C377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA94511-549F-4A48-AAF0-4D8FA457C377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA94511-549F-4A48-AAF0-4D8FA457C377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +131,7 @@ Global
 		{578EDD18-3021-48C4-9522-D30AA2C7F0F5} = {D7EDD329-EB0A-4958-9A09-51A25674A967}
 		{80077637-374F-405B-9D9D-7A7DEE872CF1} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
 		{57B4FEE4-F2E8-4CF2-8E01-9A1053C7F68C} = {951DC843-9C44-474C-9DCA-3FE0CC36BE83}
+		{6FA94511-549F-4A48-AAF0-4D8FA457C377} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7591A428-3162-447A-841E-2476901C3B3A}

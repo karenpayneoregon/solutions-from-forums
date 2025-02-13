@@ -1,5 +1,8 @@
 ﻿namespace SqlServerLibrary.Models;
 #nullable disable
+/// <summary>
+/// Represents metadata information about a datetime column in a SQL Server table.
+/// </summary>
 public class DateTimeInformation
 {
     public string TableName { get; set; }
